@@ -19,7 +19,7 @@
   <a href="https://github.com/Kwai-Kolors/Kolors"><img src="https://img.shields.io/static/v1?label=Kolors Code&message=Github&color=blue&logo=github-pages"></a> &ensp;
   <a href="https://kwai-kolors.github.io/"><img src="https://img.shields.io/static/v1?label=Team%20Page&message=Page&color=green"></a> &ensp;
 
-  <a href=""><img src="https://img.shields.io/static/v1?label=Tech Report&message=Arxiv:Kolors&color=red&logo=arxiv"></a> &ensp;
+  <a href="https://github.com/Kwai-Kolors/Kolors/blob/master/imgs/Kolors_paper.pdf"><img src="https://img.shields.io/static/v1?label=Tech Report&message=Arxiv:Kolors&color=red&logo=arxiv"></a> &ensp;
   <a href="https://kolors.kuaishou.com/"><img src="https://img.shields.io/static/v1?label=Official Website&message=Page&color=green"></a> &ensp;
 </div>
 
@@ -47,7 +47,7 @@
 
 ## <a name="新闻"></a>🎉 新闻
 
-* 2024.07.06 🔥🔥🔥 我们开源了基于隐空间扩散的文生图大模型 **Kolors** ，该模型基于数十亿图文对进行训练，支持256的上下文token数，支持中英双语，技术细节参考[技术报告]()。
+* 2024.07.06 🔥🔥🔥 我们开源了基于隐空间扩散的文生图大模型 **Kolors** ，该模型基于数十亿图文对进行训练，支持256的上下文token数，支持中英双语，技术细节参考[技术报告](https://github.com/Kwai-Kolors/Kolors/blob/master/imgs/Kolors_paper.pdf)。
 * 2024.07.03 📊 Kolors 在智源研究院 [FlagEval 多模态文生图](https://flageval.baai.ac.cn/#/leaderboard/multimodal?kind=t2i)评测中取得第二名，其中中文主观质量、英文主观质量两个单项排名第一。
 * 2024.07.02 🎉 祝贺，可图项目组提出的可控视频生成方法 [DragAnything: Motion Control for Anything using Entity Representation](https://arxiv.org/abs/2403.07420)  被 ECCV 2024 接收。
 * 2024.02.08 🎉 祝贺，可图项目组提出的生成模型评估方法 [Learning Multi-dimensional Human Preference for Text-to-Image Generation](https://wangbohan97.github.io/MPS/)  被 CVPR 2024 接收。
@@ -66,7 +66,7 @@
 <br><br>
 
 ## <a name="模型介绍"></a>📖 模型介绍
-可图大模型是由快手可图团队开发的基于潜在扩散的大规模文本到图像生成模型。Kolors 在数十亿图文对下进行训练，在视觉质量、复杂语义理解、文字生成（中英文字符）等方面，相比于开源/闭源模型，都展示出了巨大的优势。同时，Kolors 支持中英双语，在中文特色内容理解方面更具竞争力。更多的实验结果和细节请查看我们的<a href="https://kolors.kuaishou.com/">技术报告</a></b>。
+可图大模型是由快手可图团队开发的基于潜在扩散的大规模文本到图像生成模型。Kolors 在数十亿图文对下进行训练，在视觉质量、复杂语义理解、文字生成（中英文字符）等方面，相比于开源/闭源模型，都展示出了巨大的优势。同时，Kolors 支持中英双语，在中文特色内容理解方面更具竞争力。更多的实验结果和细节请查看我们的<a href="https://github.com/Kwai-Kolors/Kolors/blob/master/imgs/Kolors_paper.pdf">技术报告</a></b>。
 <br><br>
 
 ## <a name="评测表现"></a>📊 评测表现
@@ -120,7 +120,7 @@ Kolors 在整体满意度方面处于最优水平，其中画面质量显著领�
 
 <br>
 
-更多的实验结果和细节请查看我们的技术报告。点击[技术报告]()。
+更多的实验结果和细节请查看我们的技术报告。点击[技术报告](https://github.com/Kwai-Kolors/Kolors/blob/master/imgs/Kolors_paper.pdf)。
 <br><br>
 
 ## <a name="可视化"></a>🎥 可视化
