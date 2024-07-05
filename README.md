@@ -14,7 +14,7 @@
   <a href="https://github.com/Kwai-Kolors/Kolors"><img src="https://img.shields.io/static/v1?label=Kolors Code&message=Github&color=blue&logo=github-pages"></a> &ensp;
   <a href="https://kwai-kolors.github.io/"><img src="https://img.shields.io/static/v1?label=Team%20Page&message=Page&color=green"></a> &ensp;
 
-  <a href=""><img src="https://img.shields.io/static/v1?label=Tech Report&message=Arxiv:Kolors&color=red&logo=arxiv"></a> &ensp;
+  <a href="https://github.com/Kwai-Kolors/Kolors/blob/master/imgs/Kolors_paper.pdf"><img src="https://img.shields.io/static/v1?label=Tech Report&message=Arxiv:Kolors&color=red&logo=arxiv"></a> &ensp;
   <a href="https://kolors.kuaishou.com/"><img src="https://img.shields.io/static/v1?label=Official Website&message=Page&color=green"></a> &ensp;
 </div>
 
@@ -39,7 +39,7 @@
 
 
 ## <a name="News"></a>🎉 News
-* 2024.07.06 🔥🔥🔥 We release **Kolors**, a large text-to-image model trained on billions of text-image pairs. This model is bilingual in both Chinese and English, and supports a context length of 256 tokens. For more technical details, please refer to [technical report]().
+* 2024.07.06 🔥🔥🔥 We release **Kolors**, a large text-to-image model trained on billions of text-image pairs. This model is bilingual in both Chinese and English, and supports a context length of 256 tokens. For more technical details, please refer to [technical report](https://github.com/Kwai-Kolors/Kolors/blob/master/imgs/Kolors_paper.pdf).
 * 2024.07.03 📊 Kolors won the second place on [FlagEval Multimodal Text-to-Image Leaderboard](https://flageval.baai.ac.cn/#/leaderboard/multimodal?kind=t2i), excelling particularly in the Chinese and English subjective quality assessment where Kolors took the first place.
 * 2024.07.02 🎉 Congratulations! Our paper on controllable video generation, [DragAnything: Motion Control for Anything using Entity Representation](https://arxiv.org/abs/2403.07420), have been accepted by ECCV 2024.
 * 2024.02.08 🎉 Congratulations! Our paper on generative model evaluation, [Learning Multi-dimensional Human Preference for Text-to-Image Generation](https://wangbohan97.github.io/MPS/), have been accepted by CVPR 2024.
@@ -60,7 +60,7 @@
 ## 
 ## <a name="Introduction"></a>📖 Introduction
 
-Kolors is a large-scale text-to-image generation model based on latent diffusion, developed by the Kuaishou Kolors team. Trained on billions of text-image pairs, Kolors exhibits significant advantages over both open-source and closed-source models in visual quality, complex semantic accuracy, and text rendering for both Chinese and English characters. Furthermore, Kolors supports both Chinese and English inputs, demonstrating strong performance in understanding and generating Chinese-specific content. For more details, please refer to this <a href="https://kolors.kuaishou.com/">technical report</a></b>.
+Kolors is a large-scale text-to-image generation model based on latent diffusion, developed by the Kuaishou Kolors team. Trained on billions of text-image pairs, Kolors exhibits significant advantages over both open-source and closed-source models in visual quality, complex semantic accuracy, and text rendering for both Chinese and English characters. Furthermore, Kolors supports both Chinese and English inputs, demonstrating strong performance in understanding and generating Chinese-specific content. For more details, please refer to this <a href="https://github.com/Kwai-Kolors/Kolors/blob/master/imgs/Kolors_paper.pdf">technical report</a></b>.
 <br><br>
 
 ## <a name="Evaluation"></a>📊 Evaluation
