@@ -110,7 +110,7 @@ We used [MPS](https://arxiv.org/abs/2405.14705) (Multi-dimensional Human Prefere
 
 <br>
 
-For more experimental results and details, please refer to our [technical report]().
+For more experimental results and details, please refer to our [technical report](https://github.com/Kwai-Kolors/Kolors/blob/master/imgs/Kolors_paper.pdf).
 
 <br><br>
 
