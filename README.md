@@ -168,6 +168,10 @@ python3 setup.py install
 ```
 2. Weights download（[link](https://huggingface.co/Kwai-Kolors/Kolors)）：
 ```bash
+huggingface-cli download --resume-download Kwai-Kolors/Kolors --local-dir weights/Kolors
+```
+or
+```bash
 git lfs clone https://huggingface.co/Kwai-Kolors/Kolors weights/Kolors
 ```
 3. Inference：
