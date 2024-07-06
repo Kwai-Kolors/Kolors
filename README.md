@@ -175,6 +175,11 @@ git lfs clone https://huggingface.co/Kwai-Kolors/Kolors weights/Kolors
 python3 scripts/sample.py "一张瓢虫的照片，微距，变焦，高质量，电影，拿着一个牌子，写着“可图”"
 # The image will be saved to "scripts/outputs/sample_text.jpg"
 ```
+4. Inference ui：
+```bash
+python3 scripts/sampleui.py
+# The image will be saved to "scripts/outputs/sample_text.jpg"
+```
 <br><br>
 
 ## <a name="License"></a>📜 License & Citation & Acknowledgments
