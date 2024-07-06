@@ -175,6 +175,10 @@ python3 setup.py install
 ```
 2、模型权重下载（[链接](https://huggingface.co/Kwai-Kolors/Kolors)）：
 ```bash
+huggingface-cli download --resume-download Kwai-Kolors/Kolors --local-dir weights/Kolors
+```
+或者
+```bash
 git lfs clone https://huggingface.co/Kwai-Kolors/Kolors weights/Kolors
 ```
 3、模型推理：
