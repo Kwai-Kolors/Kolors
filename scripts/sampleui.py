@@ -46,7 +46,7 @@ def load_models():
         pipe = pipe.to("cuda")
         pipe.enable_model_cpu_offload()  # Enable offloading to balance CPU/GPU usage
 
-def infer(prompt, use_random_seed, seed, height, width, num_inference_steps, guidance_scale, num_images_per_prompt):
+def infer(prompt, neg_prompt, use_random_seed, seed, height, width, num_inference_steps, guidance_scale, num_images_per_prompt):
     load_models()
 
     if use_random_seed:
@@ -55,6 +55,7 @@ def infer(prompt, use_random_seed, seed, height, width, num_inference_steps, gui
     generator = torch.Generator(pipe.device).manual_seed(seed)
     images = pipe(
         prompt=prompt,
+        negative_prompt=neg_prompt,
         height=height,
         width=width,
         num_inference_steps=num_inference_steps,
@@ -85,6 +86,7 @@ def gradio_interface():
             with gr.Column():
                 gr.Markdown("## Kolors: Diffusion Model Gradio Interface")
                 prompt = gr.Textbox(label="Prompt")
+                neg_prompt = gr.Textbox(label="Negative Prompt")
                 use_random_seed = gr.Checkbox(label="Use Random Seed", value=True)
                 seed = gr.Slider(minimum=0, maximum=2**32 - 1, step=1, label="Seed", randomize=True, visible=False)
                 use_random_seed.change(lambda x: gr.update(visible=not x), use_random_seed, seed)
@@ -100,7 +102,7 @@ def gradio_interface():
 
         btn.click(
             fn=infer,
-            inputs=[prompt, use_random_seed, seed, height, width, num_inference_steps, guidance_scale, num_images_per_prompt],
+            inputs=[prompt, neg_prompt, use_random_seed, seed, height, width, num_inference_steps, guidance_scale, num_images_per_prompt],
             outputs=output_images
         )
 
