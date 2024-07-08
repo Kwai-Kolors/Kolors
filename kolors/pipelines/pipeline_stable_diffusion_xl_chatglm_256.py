@@ -330,7 +330,7 @@ class StableDiffusionXLPipeline(DiffusionPipeline, FromSingleFileMixin, LoraLoad
                         attention_mask=text_inputs['attention_mask'],
                         position_ids=text_inputs['position_ids'],
                         output_hidden_states=True)
-                prompt_embeds = output.hidden_states[-2].permute(1, 0, 2).clone() # [batch_size, 77, 4096]
+                prompt_embeds = output.hidden_states[-2].permute(1, 0, 2).clone()
                 text_proj = output.hidden_states[-1][-1, :, :].clone() # [batch_size, 4096]
                 bs_embed, seq_len, _ = prompt_embeds.shape
                 prompt_embeds = prompt_embeds.repeat(1, num_images_per_prompt, 1)
@@ -386,7 +386,7 @@ class StableDiffusionXLPipeline(DiffusionPipeline, FromSingleFileMixin, LoraLoad
                         attention_mask=uncond_input['attention_mask'],
                         position_ids=uncond_input['position_ids'],
                         output_hidden_states=True)
-                negative_prompt_embeds = output.hidden_states[-2].permute(1, 0, 2).clone() # [batch_size, 77, 4096]
+                negative_prompt_embeds = output.hidden_states[-2].permute(1, 0, 2).clone()
                 negative_text_proj = output.hidden_states[-1][-1, :, :].clone() # [batch_size, 4096]
 
                 if do_classifier_free_guidance:
