@@ -46,9 +46,11 @@ def load_models():
         pipe = pipe.to("cuda")
         pipe.enable_model_cpu_offload()  # Enable offloading to balance CPU/GPU usage
 
-def infer(prompt, neg_prompt, use_random_seed, seed, height, width, num_inference_steps, guidance_scale, num_images_per_prompt):
+def infer(prompt, neg_prompt, use_random_seed, seed, height, width, num_inference_steps, guidance_scale, num_images_per_prompt, progress = gr.Progress(track_tqdm=True)):
+    progress(0, desc="Start Loading Models...")
     load_models()
 
+    progress(0, desc="Start Generating...")
     if use_random_seed:
         seed = torch.randint(0, 2**32 - 1, (1,)).item()
 
