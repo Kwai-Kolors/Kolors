@@ -43,7 +43,7 @@ b. 如果您违反本协议的任何条款或条件，我们可终止本协议�
 a. 本协议及由本协议引起的或与本协议有关的任何争议均受中华人民共和国大陆地区（仅为本协议目的，不包括香港、澳门和台湾）法律管辖，并排除冲突法的适用，且《联合国国际货物销售合同公约》不适用于本协议。
 b. 因本协议引起或与本协议有关的任何争议，由许可人住所地人民法院管辖。
 
-请注意，许可证可能会更新到更全面的版本。 有关许可和版权的任何问题，请通过 kolors_opensource@kuaishou.com 与我们联系。
+请注意，许可证可能会更新到更全面的版本。 有关许可和版权的任何问题，请通过 kwai-kolors@kuaishou.com 与我们联系。
  
  
 英文版
@@ -53,7 +53,7 @@ Release Date: 2024/7/6
 By clicking to agree or by using, reproducing, modifying, distributing, performing or displaying any portion or element of the Model Works, You will be deemed to have recognized and accepted the content of this Agreement, which is effective immediately.
 1.   	DEFINITIONS.
 a.    	“Agreement” shall mean the terms and conditions for use, reproduction, distribution, modification, performance and displaying of the Model Works or any portion or element thereof set forth herein.
-b.   	“Documentation” shall mean the specifications, manuals and documentation for Kuaishou Kolors  made publicly available by Kuaishou.
+b.   	“Materials” shall mean, collectively, Us proprietary the Model and Documentation (and any portion thereof) as made available by Us under this Agreement.
 c.  	“Model” shall mean the large language models, image/video/audio/3D generation models, and multimodal large language models and their software and algorithms, including trained model weights, parameters (including optimizer states), machine-learning model code, inference-enabling code, training-enabling code, fine-tuning enabling code and other elements of the foregoing made publicly available by Us .
 d.   	“Output” shall mean the information and/or content output of Model or a Model Derivative that results from operating or otherwise using Model or a Model Derivative.
 e.    	“Model Derivatives” shall mean all: (i) modifications to the Model or any Model Derivative; (ii) works based on the Model or any Model Derivative; or (iii) any other machine learning model which is created by transfer of patterns of the weights, parameters, operations, or Output of the Model or any Model Derivative, to that model in order to cause that model to perform similarly to the Model or a Model Derivative, including distillation methods, methods that use intermediate data representations, or methods based on the generation of synthetic data Outputs or a Model Derivative for training that model. For clarity, Outputs by themselves are not deemed Model Derivatives.
@@ -68,12 +68,14 @@ b.   	You may, subject to Your compliance with this Agreement, distribute or mak
  (i)	You must provide all such Third Party recipients of the Model Works or products or services using them the source of the Model and a copy of this Agreement;
 (ii)    You must cause any modified documents to carry prominent notices stating that You changed the documents;
 (iii)	You may add Your own copyright statement to Your modifications and, may provide additional or different license terms and conditions for use, reproduction, or distribution of Your modifications, or for any such Model Derivatives as a whole, provided Your use, reproduction, modification, distribution, performance and display of the work otherwise complies with the terms and conditions of this Agreement.
-c.    	additional commercial terms: If, You wish to use the model or its derivatives for commercial purposes, You must request a license from licensor, which the licensor may grant to You in its sole discretion, and You are not authorized to exercise any of the rights under this Agreement unless or until Kuaishou  otherwise expressly grants You such rights.
+c.    	additional commercial terms: If, on the Model version release date, the monthly active users of all products or services made available by or for Licensee is greater than 100 million monthly active users in the preceding calendar month, or, Licensee is a cloud computing platform vendor, You must request a license from licensor, which the licensor may grant to You in its sole discretion, and You are not authorized to exercise any of the rights under this Agreement unless or until We otherwise expressly grants You such rights.
+
+
 3.   	LICENSE RESTRICITIONS.
-a.    	Your use of the Model Works must comply with applicable laws and regulations (including trade compliance laws and regulations) and adhere to the Service Agreement (https://kolors.kuaishou.com/agreement). You must include the use restrictions referenced in these Sections 3(a) and 3(b) as an enforceable provision in any agreement (e.g., license agreement, terms of use, etc.) governing the use and/or distribution of Model Works and You must provide notice to subsequent users to whom You distribute that Model Works are subject to the use restrictions in these Sections 3(a) and 3(b).
-b.   	You must not use the Model Works or any Output or results of the Model Works to improve any other large language model (other than Model or Model Derivatives thereof).
+a.    	Your use of the Model Works must comply with applicable laws and regulations (including trade compliance laws and regulations) and adhere to the Service Agreement. You must include the use restrictions referenced in these Sections 3(a) and 3(b) as an enforceable provision in any agreement (e.g., license agreement, terms of use, etc.) governing the use and/or distribution of Model Works and You must provide notice to subsequent users to whom You distribute that Model Works are subject to the use restrictions in these Sections 3(a) and 3(b).
+b.   	You must not use the Model Works or any Output or results of the Model Works to improve any other large  model (other than Model or Model Derivatives thereof).
 4.   	INTELLECTUAL PROPERTY.
-a.    	We retain ownership of all intellectual property rights in and to the Materials and derivatives. Conditioned upon compliance with the terms and conditions of this Agreement, with respect to any derivative works and modifications of the Materials that are made by you, you are and will be the owner of such derivative works and modifications.
+a.    	We retain ownership of all intellectual property rights in and to the Model and derivatives. Conditioned upon compliance with the terms and conditions of this Agreement, with respect to any derivative works and modifications of the Materials that are made by you, you are and will be the owner of such derivative works and modifications.
 b.  	No trademark license is granted to use the trade names, trademarks, service marks, or product names of Us, except as required to fulfill notice requirements under this Agreement or as required for reasonable and customary use in describing and redistributing the Materials.
 c.    	If You commence a lawsuit or other proceedings (including a cross-claim or counterclaim in a lawsuit) against Us or any person or entity alleging that the Materials or any Output, or any portion of any of the foregoing, infringe any intellectual property or other right owned or licensable by You, then all licenses granted to You under this Agreement shall terminate as of the date such lawsuit or other proceeding is filed. 
 5.   	DISCLAIMERS OF WARRANTY AND LIMITATIONS OF LIABILITY.
@@ -88,4 +90,4 @@ b.  We may terminate this Agreement if You breach any of the terms or conditions
 a.   This Agreement and any dispute arising out of or relating to it will be governed by the laws of China (for the purpose of this agreement only, excluding Hong Kong, Macau, and Taiwan), without regard to conflict of law principles, and the UN Convention on Contracts for the International Sale of Goods does not apply to this Agreement.
 b.   Any disputes arising from or related to this Agreement shall be under the jurisdiction of the People's Court where the Licensor is located. 
 
-Note that the license is subject to update to a more comprehensive version.  For any questions related to the license and copyright, please contact us at kolors_opensource@kuaishou.com.
+Note that the license is subject to update to a more comprehensive version.  For any questions related to the license and copyright, please contact us at kwai-kolors@kuaishou.com.
