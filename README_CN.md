@@ -47,6 +47,7 @@
 
 ## <a name="新闻"></a>🎉 新闻
 
+* 2024.07.09 💥 Kolors 支持了 [ComfyUI](https://github.com/comfyanonymous/ComfyUI#manual-install-windows-linux)，感谢 [@kijai](https://github.com/kijai/ComfyUI-KwaiKolorsWrapper) 的工作。
 * 2024.07.06 🔥🔥🔥 我们开源了基于隐空间扩散的文生图大模型 **Kolors** ，该模型基于数十亿图文对进行训练，支持256的上下文token数，支持中英双语，技术细节参考[技术报告](https://github.com/Kwai-Kolors/Kolors/blob/master/imgs/Kolors_paper.pdf)。
 * 2024.07.03 📊 Kolors 在智源研究院 [FlagEval 多模态文生图](https://flageval.baai.ac.cn/#/leaderboard/multimodal?kind=t2i)评测中取得第二名，其中中文主观质量、英文主观质量两个单项排名第一。
 * 2024.07.02 🎉 祝贺，可图项目组提出的可控视频生成方法 [DragAnything: Motion Control for Anything using Entity Representation](https://arxiv.org/abs/2403.07420)  被 ECCV 2024 接收。
