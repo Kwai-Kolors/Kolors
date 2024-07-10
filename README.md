@@ -10,7 +10,7 @@
 
 
 <div align="center">
-  <a href='https://huggingface.co/Kwai-Kolors/Kolors'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-yellow'></a> &ensp;
+  <a href='https://huggingface.co/Kwai-Kolors/Kolors'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-HF-yellow'></a> &ensp;
   <a href="https://github.com/Kwai-Kolors/Kolors"><img src="https://img.shields.io/static/v1?label=Kolors Code&message=Github&color=blue&logo=github-pages"></a> &ensp;
   <a href="https://kwai-kolors.github.io/"><img src="https://img.shields.io/static/v1?label=Team%20Page&message=Page&color=green"></a> &ensp;
 
@@ -55,7 +55,8 @@
   - [ ] LoRA
   - [ ] ControlNet (Pose, Canny, Depth)
   - [ ] IP-Adapter
-- [ ] ComfyUI
+- [x] ComfyUI
+- [x] Gradio
 - [ ] Diffusers
 <br><br>
 
@@ -181,10 +182,9 @@ git lfs clone https://huggingface.co/Kwai-Kolors/Kolors weights/Kolors
 python3 scripts/sample.py "一张瓢虫的照片，微距，变焦，高质量，电影，拿着一个牌子，写着“可图”"
 # The image will be saved to "scripts/outputs/sample_text.jpg"
 ```
-4. Inference ui：
+4. Web demo：
 ```bash
 python3 scripts/sampleui.py
-# The image will be saved to "scripts/outputs/sample_text.jpg"
 ```
 <br><br>
 
