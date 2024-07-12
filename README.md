@@ -40,6 +40,7 @@
 
 ## <a name="News"></a>🎉 News
 
+* 2024.07.12 🤗 Kolors is now available in **Diffusers**! Please check [kolors-diffusers](https://huggingface.co/Kwai-Kolors/Kolors-diffusers) or the [example](#using-with-diffusers) below for detail! Thanks to the Diffusers team for their technical support.
 * 2024.07.10 🤖 Kolors supports [ModelScope](https://modelscope.cn/models/Kwai-Kolors/Kolors).
 * 2024.07.09 💥 Kolors supports [ComfyUI](https://github.com/comfyanonymous/ComfyUI#manual-install-windows-linux). Thanks to [@kijai](https://github.com/kijai/ComfyUI-KwaiKolorsWrapper) with his great work.
 * 2024.07.06 🔥🔥🔥 We release **Kolors**, a large text-to-image model trained on billions of text-image pairs. This model is bilingual in both Chinese and English, and supports a context length of 256 tokens. For more technical details, please refer to [technical report](https://github.com/Kwai-Kolors/Kolors/blob/master/imgs/Kolors_paper.pdf).
@@ -187,6 +188,39 @@ python3 scripts/sample.py "一张瓢虫的照片，微距，变焦，高质量�
 ```bash
 python3 scripts/sampleui.py
 ```
+
+### Using with Diffusers
+Make sure you upgrade to the latest version(0.30.0.dev0) of diffusers: 
+```
+git clone https://github.com/huggingface/diffusers
+cd diffusers
+python3 setup.py install
+```
+**Notes:**
+- The pipeline uses the `EulerDiscreteScheduler` by default. We recommend using this scheduler with `guidance scale=5.0` and `num_inference_steps=50`.
+- The pipeline also supports the `EDMDPMSolverMultistepScheduler`. `guidance scale=5.0` and `num_inference_steps=25` is a good default for this scheduler.
+- In addition to Text-to-Image, `KolorsImg2ImgPipeline` also supports Image-to-Image.
+
+And then you can run:
+```python
+import torch
+from diffusers import KolorsPipeline
+pipe = KolorsPipeline.from_pretrained(
+    "Kwai-Kolors/Kolors-diffusers", 
+    torch_dtype=torch.float16, 
+    variant="fp16"
+).to("cuda")
+prompt = '一张瓢虫的照片，微距，变焦，高质量，电影，拿着一个牌子，写着"可图"'
+image = pipe(
+    prompt=prompt,
+    negative_prompt="",
+    guidance_scale=5.0,
+    num_inference_steps=50,
+    generator=torch.Generator(pipe.device).manual_seed(66),
+).images[0]
+image.show()
+```
+
 <br><br>
 
 ## <a name="License"></a>📜 License & Citation & Acknowledgments
