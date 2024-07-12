@@ -47,6 +47,8 @@
 
 ## <a name="新闻"></a>🎉 新闻
 
+
+* 2024.07.12 🤗 Kolors 已支持 **Diffusers**! 使用方式可参考 [kolors-diffusers](https://huggingface.co/Kwai-Kolors/Kolors-diffusers)或[下面的例子](#using-with-diffusers) !
 * 2024.07.10 🤖 Kolors 支持了 [ModelScope](https://modelscope.cn/models/Kwai-Kolors/Kolors).
 * 2024.07.09 💥 Kolors 支持了 [ComfyUI](https://github.com/comfyanonymous/ComfyUI#manual-install-windows-linux)，感谢 [@kijai](https://github.com/kijai/ComfyUI-KwaiKolorsWrapper) 的工作。
 * 2024.07.06 🔥🔥🔥 我们开源了基于隐空间扩散的文生图大模型 **Kolors** ，该模型基于数十亿图文对进行训练，支持256的上下文token数，支持中英双语，技术细节参考[技术报告](https://github.com/Kwai-Kolors/Kolors/blob/master/imgs/Kolors_paper.pdf)。
@@ -192,6 +194,38 @@ python3 scripts/sample.py "一张瓢虫的照片，微距，变焦，高质量�
 4、 Web demo：
 ```bash
 python3 scripts/sampleui.py
+```
+
+### 在 Diffusers 中使用
+确保您安装了最新版本的 `diffusers`(0.30.0.dev0): 
+```
+git clone https://github.com/huggingface/diffusers
+cd diffusers
+python3 setup.py install
+```
+**注意:**
+- KolorsPipeline 默认使用`EulerDiscreteScheduler` 作为噪声调度器。我们推荐使用该调度器时搭配 `guidance scale=5.0` 及 `num_inference_steps=50`。
+- KolorsPipeline 同时支持 `EDMDPMSolverMultistepScheduler`。在使用该噪声调度器时，推荐使用参数 `guidance scale=5.0`及`num_inference_steps=25`。
+- 除了文生图能力，`KolorsImg2ImgPipeline` 同时也支持图文图功能。
+
+运行一下指令进行图像生成:
+```python
+import torch
+from diffusers import KolorsPipeline
+pipe = KolorsPipeline.from_pretrained(
+    "Kwai-Kolors/Kolors-diffusers", 
+    torch_dtype=torch.float16, 
+    variant="fp16"
+).to("cuda")
+prompt = '一张瓢虫的照片，微距，变焦，高质量，电影，拿着一个牌子，写着"可图"'
+image = pipe(
+    prompt=prompt,
+    negative_prompt="",
+    guidance_scale=5.0,
+    num_inference_steps=50,
+    generator=torch.Generator(pipe.device).manual_seed(66),
+).images[0]
+image.show()
 ```
 
 <br><br>
