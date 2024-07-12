@@ -208,7 +208,7 @@ python3 setup.py install
 - KolorsPipeline 同时支持 `EDMDPMSolverMultistepScheduler`。在使用该噪声调度器时，推荐使用参数 `guidance scale=5.0`及`num_inference_steps=25`。
 - 除了文生图能力，`KolorsImg2ImgPipeline` 同时也支持图文生图功能。
 
-运行一下指令进行图像生成:
+运行以下指令进行图像生成:
 ```python
 import torch
 from diffusers import KolorsPipeline
