@@ -3,7 +3,7 @@ triton
 pydantic==2.8.2
 accelerate==0.27.2
 deepspeed==0.8.1
-huggingface-hub==0.20.2
+huggingface-hub==0.23.4
 imageio==2.25.1
 numpy==1.21.6
 omegaconf==2.3.0
@@ -12,7 +12,7 @@ Pillow==9.4.0
 tokenizers==0.13.2
 torch==1.13.1
 torchvision==0.14.1
-transformers==4.26.1
+transformers==4.42.4
 xformers==0.0.16
 safetensors==0.3.3
 diffusers==0.28.2
