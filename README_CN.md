@@ -48,7 +48,7 @@
 ## <a name="新闻"></a>🎉 新闻
 
 
-* 2024.07.12 🤗 Kolors 已支持 **Diffusers**! 使用方式可参考 [kolors-diffusers](https://huggingface.co/Kwai-Kolors/Kolors-diffusers)或[下面的例子](#using-with-diffusers) !
+* 2024.07.12 🤗 Kolors 已支持 **Diffusers**! 使用方式可参考 [kolors-diffusers](https://huggingface.co/Kwai-Kolors/Kolors-diffusers)或[下面的例子](#using-with-diffusers) ! 感谢 Diffusers 官方提供的技术支持。
 * 2024.07.10 🤖 Kolors 支持了 [ModelScope](https://modelscope.cn/models/Kwai-Kolors/Kolors).
 * 2024.07.09 💥 Kolors 支持了 [ComfyUI](https://github.com/comfyanonymous/ComfyUI#manual-install-windows-linux)，感谢 [@kijai](https://github.com/kijai/ComfyUI-KwaiKolorsWrapper) 的工作。
 * 2024.07.06 🔥🔥🔥 我们开源了基于隐空间扩散的文生图大模型 **Kolors** ，该模型基于数十亿图文对进行训练，支持256的上下文token数，支持中英双语，技术细节参考[技术报告](https://github.com/Kwai-Kolors/Kolors/blob/master/imgs/Kolors_paper.pdf)。
