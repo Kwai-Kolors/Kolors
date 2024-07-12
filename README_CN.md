@@ -206,7 +206,7 @@ python3 setup.py install
 **注意:**
 - KolorsPipeline 默认使用`EulerDiscreteScheduler` 作为噪声调度器。我们推荐使用该调度器时搭配 `guidance scale=5.0` 及 `num_inference_steps=50`。
 - KolorsPipeline 同时支持 `EDMDPMSolverMultistepScheduler`。在使用该噪声调度器时，推荐使用参数 `guidance scale=5.0`及`num_inference_steps=25`。
-- 除了文生图能力，`KolorsImg2ImgPipeline` 同时也支持图文图功能。
+- 除了文生图能力，`KolorsImg2ImgPipeline` 同时也支持图文生图功能。
 
 运行一下指令进行图像生成:
 ```python
