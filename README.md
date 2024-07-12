@@ -40,7 +40,7 @@
 
 ## <a name="News"></a>🎉 News
 
-* 2024.07.12 🤗 Kolors is now available in **Diffusers**! Please check [kolors-diffusers](https://huggingface.co/Kwai-Kolors/Kolors-diffusers) or the [example](https://github.com/Kwai-Kolors/Kolors#using-with-diffusers) below for detail!
+* 2024.07.12 🤗 Kolors is now available in **Diffusers**! Please check [kolors-diffusers](https://huggingface.co/Kwai-Kolors/Kolors-diffusers) or the [example](#using-with-diffusers) below for detail!
 * 2024.07.10 🤖 Kolors supports [ModelScope](https://modelscope.cn/models/Kwai-Kolors/Kolors).
 * 2024.07.09 💥 Kolors supports [ComfyUI](https://github.com/comfyanonymous/ComfyUI#manual-install-windows-linux). Thanks to [@kijai](https://github.com/kijai/ComfyUI-KwaiKolorsWrapper) with his great work.
 * 2024.07.06 🔥🔥🔥 We release **Kolors**, a large text-to-image model trained on billions of text-image pairs. This model is bilingual in both Chinese and English, and supports a context length of 256 tokens. For more technical details, please refer to [technical report](https://github.com/Kwai-Kolors/Kolors/blob/master/imgs/Kolors_paper.pdf).
@@ -190,7 +190,7 @@ python3 scripts/sampleui.py
 ```
 
 ### Using with Diffusers
-Make sure you upgrade to the latest version of diffusers==0.30.0.dev0: 
+Make sure you upgrade to the latest version(0.30.0.dev0) of diffusers: 
 ```
 git clone https://github.com/huggingface/diffusers
 cd diffusers
