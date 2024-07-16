@@ -156,7 +156,7 @@ git lfs clone https://huggingface.co/Kwai-Kolors/Kolors-IP-Adapter-Plus weights/
 ```bash
 python ipadapter/sample_ipadapter_plus.py ./ipadapter/assert/test_ip.jpg "穿着黑色T恤衫，上面中文绿色大字写着“可图”"
 
-python ipadapter/sample_ipadapter_plus.py ./ipadapter/assert/test_ip2.jpg "一直可爱的小狗在奔跑"
+python ipadapter/sample_ipadapter_plus.py ./ipadapter/assert/test_ip2.png "一直可爱的小狗在奔跑"
 
 # The image will be saved to "scripts/outputs/"
 ```
