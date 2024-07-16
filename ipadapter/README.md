@@ -6,7 +6,7 @@ We provide IP-Adapter-Plus weights and inference code based on [Kolors-Basemodel
 
 
 
-<table>
+<table >
   <tr>
     <td colspan="3" align="center">Example result</td>
   </tr>
@@ -18,15 +18,15 @@ We provide IP-Adapter-Plus weights and inference code based on [Kolors-Basemodel
   </tr>
 
   <tr>
-    <td align="center"><img src="assert/test_ip.jpg" width="500"/></td>
-    <td align="center">穿着黑色T恤衫，上面中文绿色大字写着“可图” </td>
-    <td align="center"><img src="../scripts/outputs/sample_ip_test_ip.jpg" width="500"/></td>
+    <td align="center"><img src="assert/test_ip.jpg" width="400"/></td>
+    <td align="center"><font style="font-size:12px">穿着黑色T恤衫，上面中文绿色大字写着“可图”。</p> (Wearing a black T-shirt with the Chinese characters "Ketu" written in large green letters on it.) </font> </td> 
+    <td align="center"><img src="../scripts/outputs/sample_ip_test_ip.jpg" width="400"/></td>
   </tr>
 
-   <tr>
+  <tr>
     <td align="center"><img src="assert/test_ip2.png" width="400"/></td>
-    <td align="center">一直可爱的小狗在奔跑 </td>
-    <td align="center"><img src="../scripts/outputs/sample_ip_test_ip2.jpg" width="500"/></td>
+    <td align="center"><font style="font-size:12px">一直可爱的小狗在奔跑。</p>(A cute dog is running.) </font> </td> 
+    <td align="center"><img src="../scripts/outputs/sample_ip_test_ip2.jpg" width="400"/></td>
   </tr>
 
   </tr>
@@ -39,8 +39,8 @@ We provide IP-Adapter-Plus weights and inference code based on [Kolors-Basemodel
 
 **Our improvements**
 
-- A stronger image feature extractor. We employ the Openai-CLIP-336 model as image encoder network, which allows us to preserve more details in the reference images
-- More diverse and high-quality training data. We construct a larger scale of high-quality training data, inspired by other work's data strategy. we believe that paired training data can effectively improve the model's performance.
+- A strong image feature extractor. We employ the Openai-CLIP-336 model as the image encoder network, which allows us to preserve more details in the reference images
+- More diverse and high-quality training data. We construct a large scale of high-quality training data, inspired by other work's data strategy. We believe that paired training data can effectively improve the performance.
 
 
 <br>
@@ -68,7 +68,7 @@ For evaluation, We created a test set consisting of over 200 reference images an
     <td colspan="5" align="center">Compare result</td>
   </tr>
   
-   <tr>
+  <tr>
     <td align="center">Reference image </td>
     <td align="center">Prompt </td>
     <td align="center">Kolors-IP-Adapter-Plus result </td>
@@ -77,19 +77,45 @@ For evaluation, We created a test set consisting of over 200 reference images an
   </tr>
 
   <tr>
-    <td align="center"><img src="assert/test_ip.jpg" alt="Image 0" width="400"/></td>
-    <td align="center">穿着黑色T恤衫，上面中文绿色大字写着“可图” </td>
-    <td align="center"><img src="../scripts/outputs/sample_ip_test_ip.jpg" alt="Image 1" width="400"/> </td>
-    <td align="center"><img src="../scripts/outputs/sample_ip_test_ip.jpg" alt="Image 2" width="400"/> </td>
-    <td align="center"><img src="../scripts/outputs/sample_ip_test_ip.jpg" alt="Image 3" width="400"/> </td>
+    <td align="center"><img src="assert/1.png" width="400"/></td>
+    <td align="center"><font style="font-size:10px">一个看向远山的少女形象，雪山背景，采用日本浮世绘风格，混合蓝色和红色柔和调色板，高分辨率 </p>（Image of a girl looking towards distant mountains, snowy mountains background, in Japanese ukiyo-e style, mixed blue and red pastel color palette, high resolution.）</font> </td>
+    <td align="center"><img src="assert/1_kolors_ip_result.jpg" width="400"/> </td>
+    <td align="center"><img src="assert/1_sdxl_ip_result.jpg" width="400"/> </td>
+    <td align="center"><img src="assert/1_mj_cw_result.png" width="400"/> </td>
   </tr>
 
-   <tr>
-    <td align="center"><img src="assert/test_ip2.png" width="400"/></td>
-    <td align="center">一直可爱的小狗在奔跑 </td>
-    <td align="center"><img src="../scripts/outputs/sample_ip_test_ip2.jpg" width="500"/></td>
-    <td align="center"><img src="../scripts/outputs/sample_ip_test_ip2.jpg" width="500"/></td>
-    <td align="center"><img src="../scripts/outputs/sample_ip_test_ip2.jpg" width="500"/></td>
+  <tr>
+    <td align="center"><img src="assert/2.png" width="400"/></td>
+    <td align="center"><font style="font-size:10px">一个漂亮的美女，看向远方</p>（A beautiful lady looking into the distance.） </font></td>
+    <td align="center"><img src="assert/2_kolors_ip_result.jpg" width="400"/> </td>
+    <td align="center"><img src="assert/2_sdxl_ip_result.jpg" width="400"/> </td>
+    <td align="center"><img src="assert/2_mj_cw_result.png" width="400"/> </td>
+  </tr>
+
+  <tr>
+    <td align="center"><img src="assert/5.png" width="400"/></td>
+    <td align="center"><font style="font-size:10px">可爱的猫咪，在花丛中，看镜头</p>（Cute cat among flowers, looking at camera.） </font></td>
+    <td align="center"><img src="assert/5_kolors_ip_result.jpg" width="400"/> </td>
+    <td align="center"><img src="assert/5_sdxl_ip_result.jpg" width="400"/> </td>
+    <td align="center"><img src="assert/5_mj_cw_result.png" width="400"/> </td>
+  </tr>
+
+å
+  <tr>
+    <td align="center"><img src="assert/4.png" width="400"/></td>
+    <td align="center"><font style="font-size:10px">站在丛林前，戴着太阳帽，高画质，高细节，高清，疯狂的细节，超高清 </p>（Standing in front of the jungle, wearing a sun hat, high quality, high detail, high definition, crazy details, ultra high definition.）</font></td>
+    <td align="center"><img src="assert/4_kolors_ip_result.jpg" width="400"/> </td>
+    <td align="center"><img src="assert/4_sdxl_ip_result.jpg" width="400"/> </td>
+    <td align="center"><img src="assert/4_mj_cw_result.png" width="400"/> </td>
+  </tr>
+
+
+  <tr>
+    <td align="center"><img src="assert/3.png" width="400"/></td>
+    <td align="center"><font style="font-size:10px">做个头像，新海诚动漫风格，丰富的色彩，唯美风景，清新明亮，斑驳的光影，最好的质量，超细节，8K画质 </p>（Make an avatar, Shinkai Makoto anime style, rich colors, beautiful scenery, fresh and bright, mottled light and shadow, best quality, ultra-detailed, 8K quality.）</font></td>
+    <td align="center"><img src="assert/3_kolors_ip_result.jpg" width="400"/> </td>
+    <td align="center"><img src="assert/3_sdxl_ip_result.jpg" width="400"/> </td>
+    <td align="center"><img src="assert/3_mj_cw_result.png" width="400"/> </td>
   </tr>
 
   </tr>

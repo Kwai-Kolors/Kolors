@@ -28,7 +28,7 @@ def infer( ip_img_path, prompt ):
     scheduler = EulerDiscreteScheduler.from_pretrained(f"{ckpt_dir}/scheduler")
     unet = UNet2DConditionModel.from_pretrained(f"{ckpt_dir}/unet", revision=None).half()
 
-    image_encoder = CLIPVisionModelWithProjection.from_pretrained( f'{root_dir}/weights/Kolors-IP_Adapter/image_encoder',  ignore_mismatched_sizes=True).to(dtype=torch.float16)
+    image_encoder = CLIPVisionModelWithProjection.from_pretrained( f'{root_dir}/weights/Kolors-IP-Adapter-Plus/image_encoder',  ignore_mismatched_sizes=True).to(dtype=torch.float16)
     ip_img_size = 336
     clip_image_processor = CLIPImageProcessor( size=ip_img_size, crop_size=ip_img_size )
 
@@ -50,7 +50,7 @@ def infer( ip_img_path, prompt ):
     if hasattr(pipe.unet, 'encoder_hid_proj'):
         pipe.unet.text_encoder_hid_proj = pipe.unet.encoder_hid_proj
 
-    pipe.load_ip_adapter( f'{root_dir}/weights/Kolors-IP_Adapter' , subfolder="", weight_name=["ip_adapter_plus_genernal.bin"])
+    pipe.load_ip_adapter( f'{root_dir}/weights/Kolors-IP-Adapter-Plus' , subfolder="", weight_name=["ip_adapter_plus_genernal.bin"])
 
     basename = ip_img_path.rsplit('/',1)[-1].rsplit('.',1)[0]
     ip_adapter_img = Image.open( ip_img_path )
