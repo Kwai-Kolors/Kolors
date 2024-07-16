@@ -54,25 +54,24 @@ For evaluation, we create a test set consisting of over 200 reference images and
 | Midjourney-v6-CW |	2.79	| 3.0	| 3.92	| 4.35 |
 |    **Kolors-IP-Adapter-Plus**    | **3.04** |  **3.25**    |    **4.45**    |    **4.30**    |
 
-- <font color=gray>*The ip_scale parameter is set to 0.3 in SDXL-IP-Adapter-Plus, while Midjourney-v6-CW utilizes the default cw scale.*</font>
+<font color=gray style="font-size:12px">*The ip_scale parameter is set to 0.3 in SDXL-IP-Adapter-Plus, while Midjourney-v6-CW utilizes the default cw scale.*</font>
 
 ------
 
 <br>
 
-<!DOCTYPE html>
 
 <table>
   <tr>
-    <td colspan="5" align="center">Compare result</td>
+    <td colspan="5" align="center">Compare Result</td>
   </tr>
   
   <tr>
     <td align="center">Reference image </td>
     <td align="center">Prompt </td>
-    <td align="center">Kolors-IP-Adapter-Plus result </td>
-    <td align="center">SDXL-IP-Adapter-Plus result </td>
-    <td align="center">Midjourney-v6-CW result </td>
+    <td align="center">Kolors-IP-Adapter-Plus Result </td>
+    <td align="center">SDXL-IP-Adapter-Plus Result </td>
+    <td align="center">Midjourney-v6-CW Result </td>
   </tr>
 
   <tr>
@@ -120,8 +119,7 @@ For evaluation, we create a test set consisting of over 200 reference images and
   
 </table>
 
-
-
+<font color=gray style="font-size:12px"> *Kolors-IP-Adapter-Plus employs chinese prompts, while other methods use english prompts.*</font>
 
 
 

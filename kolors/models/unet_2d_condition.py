@@ -1039,7 +1039,6 @@ class UNet2DConditionModel(
                     f"{self.__class__} has the config param `encoder_hid_dim_type` set to 'ip_image_proj' which requires the keyword argument `image_embeds` to be passed in  `added_conditions`"
                 )
             
-            # from IPython import embed; embed();  exit()
             if hasattr(self, 'text_encoder_hid_proj') and not self.text_encoder_hid_proj is None:
                 encoder_hidden_states = self.text_encoder_hid_proj( encoder_hidden_states )
             
