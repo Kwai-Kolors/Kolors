@@ -2,7 +2,7 @@
 
 ## <a name="Introduction"></a>📖 Introduction
 
-We provide IP-Adapter-Plus weights and inference code based on [Kolors-Basemodel]https://huggingface.co/Kwai-Kolors/Kolors. Examples of Kolors-IP-Adapter-Plus results are as follows:
+We provide IP-Adapter-Plus weights and inference code based on [Kolors-Basemodel](https://huggingface.co/Kwai-Kolors/Kolors). Examples of Kolors-IP-Adapter-Plus results are as follows:
 
 
 
@@ -127,7 +127,7 @@ For evaluation, we create a test set consisting of over 200 reference images and
 
 ### Requirements
 
-The dependencies and installation are basically the same as the [Kolors-BaseModel]https://huggingface.co/Kwai-Kolors/Kolors.
+The dependencies and installation are basically the same as the [Kolors-BaseModel](https://huggingface.co/Kwai-Kolors/Kolors).
 
 <br>
 
@@ -143,7 +143,7 @@ pip install -r requirements.txt
 python3 setup.py install
 ```
 
-2. Weights download[link]https://huggingface.co/Kwai-Kolors/Kolors-IP-Adapter-Plus：
+2. Weights download [link](https://huggingface.co/Kwai-Kolors/Kolors-IP-Adapter-Plus)：
 ```bash
 huggingface-cli download --resume-download Kwai-Kolors/Kolors-IP-Adapter-Plus --local-dir weights/Kolors-IP-Adapter-Plus
 ```
@@ -171,6 +171,6 @@ The IP-Adapter-FaceID model based on Kolors will also be released soon!
 <br>
 
 ### Acknowledgments
-- Thanks to [IP-Adapter]https://github.com/tencent-ailab/IP-Adapter for providing the codebase.
+- Thanks to [IP-Adapter](https://github.com/tencent-ailab/IP-Adapter) for providing the codebase.
 <br>
 
