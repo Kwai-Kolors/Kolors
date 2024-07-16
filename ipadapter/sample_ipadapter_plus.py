@@ -16,13 +16,13 @@ from PIL import Image
 
 root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+
 def infer( ip_img_path, prompt ):
 
     ckpt_dir = f'{root_dir}/weights/Kolors'
     text_encoder = ChatGLMModel.from_pretrained(
         f'{ckpt_dir}/text_encoder',
         torch_dtype=torch.float16).half()
-
     tokenizer = ChatGLMTokenizer.from_pretrained(f'{ckpt_dir}/text_encoder')
     vae = AutoencoderKL.from_pretrained(f"{ckpt_dir}/vae", revision=None).half()
     scheduler = EulerDiscreteScheduler.from_pretrained(f"{ckpt_dir}/scheduler")
@@ -46,11 +46,13 @@ def infer( ip_img_path, prompt ):
     pipe = pipe.to("cuda")
     pipe.enable_model_cpu_offload()
 
+    #TODO junqw. After loading the ipadpter, the original encoder_hid_proj of Unet is overridden.
     if hasattr(pipe.unet, 'encoder_hid_proj'):
         pipe.unet.text_encoder_hid_proj = pipe.unet.encoder_hid_proj
-    
+
     pipe.load_ip_adapter( f'{root_dir}/weights/Kolors-IP_Adapter' , subfolder="", weight_name=["ip_adapter_plus_genernal.bin"])
-    
+
+    basename = ip_img_path.rsplit('/',1)[-1].rsplit('.',1)[0]
     ip_adapter_img = Image.open( ip_img_path )
     generator = torch.Generator(device="cpu").manual_seed(66)
     
@@ -68,9 +70,19 @@ def infer( ip_img_path, prompt ):
             num_images_per_prompt=1,
             generator=generator,
         ).images[0]
-        image.save(f'{root_dir}/scripts/outputs/sample_test_ip_{str(scale)}.jpg')
+        image.save(f'{root_dir}/scripts/outputs/sample_ip_{basename}.jpg')
 
 
 if __name__ == '__main__':
     import fire
     fire.Fire(infer)
+    
+
+
+
+
+
+
+
+
+
