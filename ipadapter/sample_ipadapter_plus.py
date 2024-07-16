@@ -46,7 +46,6 @@ def infer( ip_img_path, prompt ):
     pipe = pipe.to("cuda")
     pipe.enable_model_cpu_offload()
 
-    #TODO junqw. After loading the ipadpter, the original encoder_hid_proj of Unet is overridden.
     if hasattr(pipe.unet, 'encoder_hid_proj'):
         pipe.unet.text_encoder_hid_proj = pipe.unet.encoder_hid_proj
 
