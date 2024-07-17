@@ -46,13 +46,9 @@ def infer( ip_img_path, prompt ):
     pipe = pipe.to("cuda")
     pipe.enable_model_cpu_offload()
     
-    print(pipe.unet.attn_processors)
-
-    # print(222); from IPython import embed; embed()
-
     if hasattr(pipe.unet, 'encoder_hid_proj'):
         pipe.unet.text_encoder_hid_proj = pipe.unet.encoder_hid_proj
-
+    
     pipe.load_ip_adapter( f'{root_dir}/weights/Kolors-IP-Adapter-Plus' , subfolder="", weight_name=["ip_adapter_plus_genernal.bin"])
 
     basename = ip_img_path.rsplit('/',1)[-1].rsplit('.',1)[0]
