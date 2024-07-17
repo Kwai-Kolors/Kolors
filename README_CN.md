@@ -65,10 +65,10 @@
   - [x] Checkpoints 
   - [ ] LoRA
   - [ ] ControlNet (Pose, Canny, Depth)
-  - [ ] IP-Adapter
+  - [x] IP-Adapter
 - [x] ComfyUI
 - [x] Gradio
-- [ ] Diffusers
+- [x] Diffusers
 <br><br>
 
 ## <a name="模型介绍"></a>📖 模型介绍
