@@ -25,7 +25,7 @@ We provide IP-Adapter-Plus weights and inference code based on [Kolors-Basemodel
 
   <tr>
     <td align="center"><img src="assert/test_ip2.png" width=400px/></td>
-    <td align="center"><font style="font-size:12px">一直可爱的小狗在奔跑。</p>A cute dog is running. </font> </td> 
+    <td align="center"><font style="font-size:12px">一只可爱的小狗在奔跑。</p>A cute dog is running. </font> </td> 
     <td align="center"><img src="../scripts/outputs/sample_ip_test_ip2.jpg" width=400px/></td>
   </tr>
 
@@ -156,7 +156,7 @@ git lfs clone https://huggingface.co/Kwai-Kolors/Kolors-IP-Adapter-Plus weights/
 ```bash
 python ipadapter/sample_ipadapter_plus.py ./ipadapter/assert/test_ip.jpg "穿着黑色T恤衫，上面中文绿色大字写着“可图”"
 
-python ipadapter/sample_ipadapter_plus.py ./ipadapter/assert/test_ip2.png "一直可爱的小狗在奔跑"
+python ipadapter/sample_ipadapter_plus.py ./ipadapter/assert/test_ip2.png "一只可爱的小狗在奔跑"
 
 # The image will be saved to "scripts/outputs/"
 ```
