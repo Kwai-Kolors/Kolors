@@ -67,7 +67,7 @@ For evaluation, we create a test set consisting of over 200 reference images and
   </tr>
   
   <tr>
-    <td align="center">Reference image </td>
+    <td align="center">Reference Image </td>
     <td align="center">Prompt </td>
     <td align="center">Kolors-IP-Adapter-Plus Result </td>
     <td align="center">SDXL-IP-Adapter-Plus Result </td>
