@@ -45,6 +45,10 @@ def infer( ip_img_path, prompt ):
 
     pipe = pipe.to("cuda")
     pipe.enable_model_cpu_offload()
+    
+    print(pipe.unet.attn_processors)
+
+    # print(222); from IPython import embed; embed()
 
     if hasattr(pipe.unet, 'encoder_hid_proj'):
         pipe.unet.text_encoder_hid_proj = pipe.unet.encoder_hid_proj
