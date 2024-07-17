@@ -63,9 +63,10 @@
 - Kolors (Text-to-Image Model)
   - [x] Inference 
   - [x] Checkpoints 
+  - [x] IP-Adapter
+  - [ ] IP-Adapter-FaceID
   - [ ] LoRA
   - [ ] ControlNet (Pose, Canny, Depth)
-  - [x] IP-Adapter
 - [x] ComfyUI
 - [x] Gradio
 - [x] Diffusers
