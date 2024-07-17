@@ -47,6 +47,7 @@
 
 ## <a name="新闻"></a>🎉 新闻
 
+* 2024.07.17 🔥 Kolors-IP-Adapter-Plus 的权重和推理代码已发布！请查看 [IP-Adapter-Plus](./ipadapter/) 获取更多详细信息。
 
 * 2024.07.12 🤗 Kolors 已支持 **Diffusers**! 使用方式可参考 [kolors-diffusers](https://huggingface.co/Kwai-Kolors/Kolors-diffusers)或[下面的例子](#using-with-diffusers) ! 感谢 Diffusers 官方提供的技术支持。
 * 2024.07.10 🤖 Kolors 支持了 [ModelScope](https://modelscope.cn/models/Kwai-Kolors/Kolors).
@@ -226,6 +227,23 @@ image = pipe(
     generator=torch.Generator(pipe.device).manual_seed(66),
 ).images[0]
 image.show()
+```
+### IP-Adapter-Plus
+
+我们提供了 IP-Adapter-Plus 的参数和代码, 详细信息见 [ipadapter](./ipadapter/README.md).
+
+```bash
+# Weights download
+huggingface-cli download --resume-download Kwai-Kolors/Kolors-IP-Adapter-Plus --local-dir weights/Kolors-IP-Adapter-Plus
+```
+
+```bash
+# Inference：
+python3 ipadapter/sample_ipadapter_plus.py ./ipadapter/assert/test_ip.jpg "穿着黑色T恤衫，上面中文绿色大字写着“可图”"
+
+python3 ipadapter/sample_ipadapter_plus.py ./ipadapter/assert/test_ip2.png "一只可爱的小狗在奔跑"
+
+# The image will be saved to "scripts/outputs/"
 ```
 
 <br><br>
