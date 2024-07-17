@@ -46,8 +46,6 @@ from diffusers.models.embeddings import (
 from diffusers.models.modeling_utils import ModelMixin
 
 try:
-    print(diffusers.__version__)
-    
     from diffusers.models.unet_2d_blocks import (
         get_down_block,
         get_mid_block,
