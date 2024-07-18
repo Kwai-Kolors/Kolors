@@ -18,13 +18,13 @@ We provide IP-Adapter-Plus weights and inference code based on [Kolors-Basemodel
   </tr>
 
   <tr>
-    <td align="center"><img src="assert/test_ip.jpg" width=400px/></td>
+    <td align="center"><img src="asset/test_ip.jpg" width=400px/></td>
     <td align="center"><font style="font-size:12px">穿着黑色T恤衫，上面中文绿色大字写着“可图”。</p> Wearing a black T-shirt with the Chinese characters "Ketu" written in large green letters on it. </font> </td> 
     <td align="center"><img src="../scripts/outputs/sample_ip_test_ip.jpg" width=400px/></td>
   </tr>
 
   <tr>
-    <td align="center"><img src="assert/test_ip2.png" width=400px/></td>
+    <td align="center"><img src="asset/test_ip2.png" width=400px/></td>
     <td align="center"><font style="font-size:12px">一只可爱的小狗在奔跑。</p>A cute dog is running. </font> </td> 
     <td align="center"><img src="../scripts/outputs/sample_ip_test_ip2.jpg" width=400px/></td>
   </tr>
@@ -75,44 +75,44 @@ For evaluation, we create a test set consisting of over 200 reference images and
   </tr>
 
   <tr>
-    <td align="center"><img src="assert/1.png" width=400px/></td>
+    <td align="center"><img src="asset/1.png" width=400px/></td>
     <td align="center"><font style="font-size:10px">一个看向远山的少女形象，雪山背景，采用日本浮世绘风格，混合蓝色和红色柔和调色板，高分辨率 </p>Image of a girl looking towards distant mountains, snowy mountains background, in Japanese ukiyo-e style, mixed blue and red pastel color palette, high resolution.</font> </td>
-    <td align="center"><img src="assert/1_kolors_ip_result.jpg" width=400px/> </td>
-    <td align="center"><img src="assert/1_sdxl_ip_result.jpg" width=400px/> </td>
-    <td align="center"><img src="assert/1_mj_cw_result.png" width=400px/> </td>
+    <td align="center"><img src="asset/1_kolors_ip_result.jpg" width=400px/> </td>
+    <td align="center"><img src="asset/1_sdxl_ip_result.jpg" width=400px/> </td>
+    <td align="center"><img src="asset/1_mj_cw_result.png" width=400px/> </td>
   </tr>
 
   <tr>
-    <td align="center"><img src="assert/2.png" width=400px/></td>
+    <td align="center"><img src="asset/2.png" width=400px/></td>
     <td align="center"><font style="font-size:10px">一个漂亮的美女，看向远方</p>A beautiful lady looking into the distance. </font></td>
-    <td align="center"><img src="assert/2_kolors_ip_result.jpg" width=400px/> </td>
-    <td align="center"><img src="assert/2_sdxl_ip_result.jpg" width=400px/> </td>
-    <td align="center"><img src="assert/2_mj_cw_result.png" width=400px/> </td>
+    <td align="center"><img src="asset/2_kolors_ip_result.jpg" width=400px/> </td>
+    <td align="center"><img src="asset/2_sdxl_ip_result.jpg" width=400px/> </td>
+    <td align="center"><img src="asset/2_mj_cw_result.png" width=400px/> </td>
   </tr>
 
   <tr>
-    <td align="center"><img src="assert/5.png" width=400px/></td>
+    <td align="center"><img src="asset/5.png" width=400px/></td>
     <td align="center"><font style="font-size:10px">可爱的猫咪，在花丛中，看镜头</p>Cute cat among flowers, looking at the camera. </font></td>
-    <td align="center"><img src="assert/5_kolors_ip_result.jpg" width=400px/> </td>
-    <td align="center"><img src="assert/5_sdxl_ip_result.jpg" width=400px/> </td>
-    <td align="center"><img src="assert/5_mj_cw_result.png" width=400px/> </td>
+    <td align="center"><img src="asset/5_kolors_ip_result.jpg" width=400px/> </td>
+    <td align="center"><img src="asset/5_sdxl_ip_result.jpg" width=400px/> </td>
+    <td align="center"><img src="asset/5_mj_cw_result.png" width=400px/> </td>
   </tr>
 
   <tr>
-    <td align="center"><img src="assert/4.png" width=400px/></td>
+    <td align="center"><img src="asset/4.png" width=400px/></td>
     <td align="center"><font style="font-size:10px">站在丛林前，戴着太阳帽，高画质，高细节，高清，疯狂的细节，超高清 </p>Standing in front of the jungle, wearing a sun hat, high quality, high detail, high definition, crazy details, ultra high definition.</font></td>
-    <td align="center"><img src="assert/4_kolors_ip_result.jpg" width=400px/> </td>
-    <td align="center"><img src="assert/4_sdxl_ip_result.jpg" width=400px/> </td>
-    <td align="center"><img src="assert/4_mj_cw_result.png" width=400px/> </td>
+    <td align="center"><img src="asset/4_kolors_ip_result.jpg" width=400px/> </td>
+    <td align="center"><img src="asset/4_sdxl_ip_result.jpg" width=400px/> </td>
+    <td align="center"><img src="asset/4_mj_cw_result.png" width=400px/> </td>
   </tr>
 
 
   <tr>
-    <td align="center"><img src="assert/3.png" width=400px/></td>
+    <td align="center"><img src="asset/3.png" width=400px/></td>
     <td align="center"><font style="font-size:10px">做个头像，新海诚动漫风格，丰富的色彩，唯美风景，清新明亮，斑驳的光影，最好的质量，超细节，8K画质 </p>Create an avatar, Shinkai Makoto anime style, rich colors, beautiful scenery, fresh and bright, mottled light and shadow, best quality, ultra-detailed, 8K quality.</font></td>
-    <td align="center"><img src="assert/3_kolors_ip_result.jpg" width=400px/> </td>
-    <td align="center"><img src="assert/3_sdxl_ip_result.jpg" width=400px/> </td>
-    <td align="center"><img src="assert/3_mj_cw_result.png" width=400px/> </td>
+    <td align="center"><img src="asset/3_kolors_ip_result.jpg" width=400px/> </td>
+    <td align="center"><img src="asset/3_sdxl_ip_result.jpg" width=400px/> </td>
+    <td align="center"><img src="asset/3_mj_cw_result.png" width=400px/> </td>
   </tr>
 
   </tr>
@@ -154,9 +154,9 @@ git lfs clone https://huggingface.co/Kwai-Kolors/Kolors-IP-Adapter-Plus weights/
 
 3. Inference：
 ```bash
-python ipadapter/sample_ipadapter_plus.py ./ipadapter/assert/test_ip.jpg "穿着黑色T恤衫，上面中文绿色大字写着“可图”"
+python ipadapter/sample_ipadapter_plus.py ./ipadapter/asset/test_ip.jpg "穿着黑色T恤衫，上面中文绿色大字写着“可图”"
 
-python ipadapter/sample_ipadapter_plus.py ./ipadapter/assert/test_ip2.png "一只可爱的小狗在奔跑"
+python ipadapter/sample_ipadapter_plus.py ./ipadapter/asset/test_ip2.png "一只可爱的小狗在奔跑"
 
 # The image will be saved to "scripts/outputs/"
 ```
