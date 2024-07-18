@@ -234,9 +234,9 @@ huggingface-cli download --resume-download Kwai-Kolors/Kolors-IP-Adapter-Plus --
 
 ```bash
 # Inference：
-python3 ipadapter/sample_ipadapter_plus.py ./ipadapter/assert/test_ip.jpg "穿着黑色T恤衫，上面中文绿色大字写着“可图”"
+python3 ipadapter/sample_ipadapter_plus.py ./ipadapter/asset/test_ip.jpg "穿着黑色T恤衫，上面中文绿色大字写着“可图”"
 
-python3 ipadapter/sample_ipadapter_plus.py ./ipadapter/assert/test_ip2.png "一只可爱的小狗在奔跑"
+python3 ipadapter/sample_ipadapter_plus.py ./ipadapter/asset/test_ip2.png "一只可爱的小狗在奔跑"
 
 # The image will be saved to "scripts/outputs/"
 ```

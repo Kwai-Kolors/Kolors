@@ -49,7 +49,7 @@ def infer( ip_img_path, prompt ):
     if hasattr(pipe.unet, 'encoder_hid_proj'):
         pipe.unet.text_encoder_hid_proj = pipe.unet.encoder_hid_proj
     
-    pipe.load_ip_adapter( f'{root_dir}/weights/Kolors-IP-Adapter-Plus' , subfolder="", weight_name=["ip_adapter_plus_genernal.bin"])
+    pipe.load_ip_adapter( f'{root_dir}/weights/Kolors-IP-Adapter-Plus' , subfolder="", weight_name=["ip_adapter_plus_general.bin"])
 
     basename = ip_img_path.rsplit('/',1)[-1].rsplit('.',1)[0]
     ip_adapter_img = Image.open( ip_img_path )
