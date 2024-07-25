@@ -1,3 +1,4 @@
+中文版
 模型许可协议
 模型发布日期：2024/7/6
 
@@ -20,20 +21,21 @@ b.在遵守本协议的前提下，您可以分发或向第三方提供模型作
 （i）您必须向所有该模型作品或使用该作品的产品或服务的任何第三方接收者提供模型作品的来源和本协议的副本；
 （ii）您必须在任何修改过的文档上附加明显的声明，说明您更改了这些文档；
 （iii）您可以在您的修改中添加您自己的版权声明，并且，在您对该作品的使用、复制、修改、分发、表演和展示符合本协议的条款和条件的前提下，您可以为您的修改或任何此类模型衍生品的使用、复制或分发提供额外或不同的许可条款和条件。
-c. 附加商业条款：	若您希望将模型及模型衍生品用作商业用途，则您必须向许可人申请许可，许可人可自行决定向您授予许可。除非许可人另行明确授予您该等权利，否则您无权行使本协议项下的任何权利。
+c. 附加商业条款：若您提供的所有产品或服务的月活跃用户数在前一个自然月未超过3亿月活跃用户数，则您向许可方进行登记，将被视为获得相应的商业许可；若您提供的所有产品或服务的月活跃用户数在前一个自然月超过3亿月活跃用户数，则您必须向许可人申请许可，许可人可自行决定向您授予许可。除非许可人另行明确授予您该等权利，否则您无权行使本协议项下的任何权利。
 
 3.使用限制。
 a. 您对本模型作品的使用必须遵守适用法律法规（包括贸易合规法律法规），并遵守《服务协议》(https://kolors.kuaishou.com/agreement)。您必须将本第 3(a) 和 3(b) 条中提及的使用限制作为可执行条款纳入任何规范本模型作品使用和/或分发的协议（例如许可协议、使用条款等），并且您必须向您分发的后续用户发出通知，告知其本模型作品受本第 3(a) 和 3(b) 条中的使用限制约束。
 b. 您不得使用本模型作品或本模型作品的任何输出或成果来改进任何其他模型（本模型或其模型衍生品除外）。
 
 4.知识产权。
-a. 我们保留模型的所有权及其相关知识产权。在遵守本协议条款和条件的前提下，对于您制作的材料的任何衍生作品和修改，您是且将是此类衍生作品和修改的所有者。
+a. 我们保留材料的所有权及其相关知识产权。在遵守本协议条款和条件的前提下，对于您制作的材料的任何衍生作品和修改，您是且将是此类衍生作品和修改的所有者。
 b.  本协议不授予任何商标、商号、服务标记或产品名称的标识许可，除非出于描述和分发本模型作品的合理和惯常用途。
 c. 如果您对我们或任何个人或实体提起诉讼或其他程序（包括诉讼中的交叉索赔或反索赔），声称材料或任何输出或任何上述内容的任何部分侵犯您拥有或可许可的任何知识产权或其他权利，则根据本协议授予您的所有许可应于提起此类诉讼或其他程序之日起终止。
 
 5. 免责声明和责任限制。
 a.  本模型作品及其任何输出和结果按“原样”提供，不作任何明示或暗示的保证，包括适销性、非侵权性或适用于特定用途的保证。我们不对材料及其任何输出的安全性或稳定性作任何保证，也不承担任何责任。
 b. 在任何情况下，我们均不对您承担任何损害赔偿责任，包括但不限于因您使用或无法使用材料或其任何输出而造成的任何直接、间接、特殊或后果性损害赔偿责任，无论该损害赔偿责任是如何造成的。
+c. 对于因您使用或分发模型的衍生物而引起的或与之相关的任何第三方索赔，您应提供辩护，赔偿，并使我方免受损害。
 
 6. 存续和终止。
 a. 本协议期限自您接受本协议或访问材料之日起开始，并将持续完全有效，直至根据本协议条款和条件终止。
@@ -68,20 +70,20 @@ b.   	You may, subject to Your compliance with this Agreement, distribute or mak
  (i)	You must provide all such Third Party recipients of the Model Works or products or services using them the source of the Model and a copy of this Agreement;
 (ii)    You must cause any modified documents to carry prominent notices stating that You changed the documents;
 (iii)	You may add Your own copyright statement to Your modifications and, may provide additional or different license terms and conditions for use, reproduction, or distribution of Your modifications, or for any such Model Derivatives as a whole, provided Your use, reproduction, modification, distribution, performance and display of the work otherwise complies with the terms and conditions of this Agreement.
-c.    	additional commercial terms: If, on the Model version release date, the monthly active users of all products or services made available by or for Licensee is greater than 100 million monthly active users in the preceding calendar month, or, Licensee is a cloud computing platform vendor, You must request a license from licensor, which the licensor may grant to You in its sole discretion, and You are not authorized to exercise any of the rights under this Agreement unless or until We otherwise expressly grants You such rights.
+c.    	additional commercial terms: If, the monthly active users of all products or services made available by or for Licensee does not exceed 300 million monthly active users in the preceding calendar month, Your registration with the Licensor will be deemed to have obtained the corresponding business license; If, the monthly active users of all products or services made available by or for Licensee is greater than 300 million monthly active users in the preceding calendar month, You must request a license from Licensor, which the Licensor may grant to You in its sole discretion, and You are not authorized to exercise any of the rights under this Agreement unless or until We otherwise expressly grants You such rights.
 
 
 3.   	LICENSE RESTRICITIONS.
 a.    	Your use of the Model Works must comply with applicable laws and regulations (including trade compliance laws and regulations) and adhere to the Service Agreement. You must include the use restrictions referenced in these Sections 3(a) and 3(b) as an enforceable provision in any agreement (e.g., license agreement, terms of use, etc.) governing the use and/or distribution of Model Works and You must provide notice to subsequent users to whom You distribute that Model Works are subject to the use restrictions in these Sections 3(a) and 3(b).
 b.   	You must not use the Model Works or any Output or results of the Model Works to improve any other large  model (other than Model or Model Derivatives thereof).
 4.   	INTELLECTUAL PROPERTY.
-a.    	We retain ownership of all intellectual property rights in and to the Model and derivatives. Conditioned upon compliance with the terms and conditions of this Agreement, with respect to any derivative works and modifications of the Materials that are made by you, you are and will be the owner of such derivative works and modifications.
+a.    	We retain ownership of all intellectual property rights in and to the Model and derivatives. Conditioned upon compliance with the terms and conditions of this Agreement, with respect to any derivative works and modifications of the Materials that are made by You, You are and will be the owner of such derivative works and modifications.
 b.  	No trademark license is granted to use the trade names, trademarks, service marks, or product names of Us, except as required to fulfill notice requirements under this Agreement or as required for reasonable and customary use in describing and redistributing the Materials.
 c.    	If You commence a lawsuit or other proceedings (including a cross-claim or counterclaim in a lawsuit) against Us or any person or entity alleging that the Materials or any Output, or any portion of any of the foregoing, infringe any intellectual property or other right owned or licensable by You, then all licenses granted to You under this Agreement shall terminate as of the date such lawsuit or other proceeding is filed. 
 5.   	DISCLAIMERS OF WARRANTY AND LIMITATIONS OF LIABILITY.
 a. THE MODEL WORKS AND ANY OUTPUT AND RESULTS THERE FROM ARE PROVIDED  "AS IS" WITHOUT ANY EXPRESS OR IMPLIED WARRANTY OF ANY KIND INCLUDING WARRANTIES OF MERCHANTABILITY, NONINFRINGEMENT, OR FITNESS FOR A PARTICULAR PURPOSE. WE MAKE NO WARRANTY AND ASSUME NO RESPONSIBILITY FOR THE SAFETY OR STABILITY OF THE MATERIALS AND ANY OUTPUT THEREFROM.
 b.   IN NO EVENT SHALL WE BE LIABLE TO YOU FOR ANY DAMAGES, INCLUDING, BUT NOT LIMITED TO ANY DIRECT, OR INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING FROM YOUR USE OR INABILITY TO USE THE MATERIALS OR ANY OUTPUT OF IT, NO MATTER HOW IT’S CAUSED.
-c. You will defend, indemnify and hold harmless Us from and against any claim by any third party arising out of or related to your use or distribution of the Materials.
+c. You will defend, indemnify and hold harmless Us from and against any claim by any third party arising out of or related to Your use or distribution of the Materials.
 
 6.   	SURVIVAL AND TERMINATION.
 a.  The term of this Agreement shall commence upon Your acceptance of this Agreement or access to the Materials and will continue in full force and effect until terminated in accordance with the terms and conditions herein.
