@@ -53,8 +53,8 @@ For evaluation, we created a test set comprising 200 masked images and text prom
 
 |       Model       |  Average Overall Satisfaction | Average Inpainting Artifacts | Average Visual Appeal | Average Text Faithfulness |
 | :-----------------: | :-----------: | :-----------: | :-----------: | :-----------: |
-| SDXL-Inpainting |	2.573	| 3.795	| 3.000	| 4.299 |
-|    **Kolors-Inpainting**    | **3.493** |  **4.796**    |    **3.855**    |    **4.346**    |
+| SDXL-Inpainting |	2.573	| 1.205	| 3.000	| 4.299 |
+|    **Kolors-Inpainting**    | **3.493** |  **0.204**    |    **3.855**    |    **4.346**    |
 
 
 <br>
