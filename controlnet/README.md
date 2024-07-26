@@ -82,7 +82,7 @@ To evaluate the performance of models, we compiled a test set of more than 200 i
 
 |       Model       |  Average Overall Satisfaction | Average Visual Appeal | Average Text Faithfulness | Average Conditional Controllability |
 | :--------------: | :--------: | :--------: | :--------: | :--------: |
-| SDXL-ControlNet-Canny |	3.35	| 3.77	| 4.26	| 4.5 |
+| SDXL-ControlNet-Depth |	3.35	| 3.77	| 4.26	| 4.5 |
 | **Kolors-ControlNet-Depth**  | **4.12** |  **4.12**  | **4.62** | **4.6** |
 
 
