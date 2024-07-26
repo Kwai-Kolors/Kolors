@@ -5,9 +5,7 @@ import cv2
 import os
 import PIL
 
-
 annotator_ckpts_path = os.path.join(os.path.dirname(__file__), 'ckpts')
-# annotator_ckpts_path = '/mmu-vcg/wujunqiang/models/models--lllyasviel--Annotators/snapshots/9a7d84251d487d11c4834466779de6b0d2c44486'
 
 def HWC3(x):
     assert x.dtype == np.uint8
