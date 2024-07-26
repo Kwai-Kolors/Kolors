@@ -122,6 +122,7 @@ def infer( image_path , ip_image_path,  prompt, model_type = 'Canny' ):
     ).images[0]
     
     image.save(f'{root_dir}/controlnet/outputs/{model_type}_ipadapter_{basename}.jpg')
+    condi_img.save(f'{root_dir}/controlnet/outputs/{model_type}_{basename}_condition.jpg')
 
 
 if __name__ == '__main__':

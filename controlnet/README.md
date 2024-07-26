@@ -6,7 +6,7 @@
 We provide two ControlNet weights and inference code based on Kolors-Basemodel: Canny and Depth. You can find some example images in the following.
 
 
-**ControlNet Demos**
+**1、ControlNet Demos**
 
 <table >
   
@@ -33,8 +33,7 @@ We provide two ControlNet weights and inference code based on Kolors-Basemodel: 
 
 
 
-
-**ControlNet and IP-Adapter-Plus Demos**
+**2、ControlNet and IP-Adapter-Plus Demos**
 
 We also support joint inference code between Kolors-IPadapter and Kolors-ControlNet.
 
@@ -53,17 +52,18 @@ We also support joint inference code between Kolors-IPadapter and Kolors-Control
     <td align="center"><img src="outputs/Depth_ipadapter_woman_2.jpg" width=400px/></td>
   </tr>
 
+  <tr>
+    <td align="center"><img src="assets/woman_1.png" width=400px/></td>
+    <td align="center"><img src="outputs/Depth_1_condition.jpg" width=400px/></td>
+    <td align="center"><font style="font-size:12px">一个漂亮的女孩，最好的质量，超细节，8K画质。</p> A beautiful girl, best quality, super detail, 8K quality. </font> </td> 
+    <td align="center"><img src="outputs/Depth_ipadapter_1.jpg" width=400px/></td>
+  </tr>
+
 </table>
 
 <br>
 
-**Model Detail**
 
-
-
-
-
-<br>
 
 
 ## <a name="Evaluation"></a>📊 Evaluation
@@ -173,12 +173,14 @@ python ./controlnet/sample_controlNet.py ./controlnet/assets/bird.png 一只颜�
 
 
 
-**b. Using depth ControlNet + IP-Adapter-Plus:**
+**c. Using depth ControlNet + IP-Adapter-Plus:**
 
 If you intend to utilize the kolors-ip-adapter-plus, please ensure to download its corresponding model weights.
 
 ```bash
 python ./controlnet/sample_controlNet_ipadapter.py ./controlnet/assets/woman_2.png ./ipadapter/asset/2.png  一个红色头发的女孩，唯美风景，清新明亮，斑驳的光影，最好的质量，超细节，8K画质 Depth
+
+python ./controlnet/sample_controlNet_ipadapter.py ./ipadapter/asset/1.png ./controlnet/assets/woman_1.png  一个漂亮的女孩，最好的质量，超细节，8K画质 Depth
 
 # The image will be saved to "controlnet/outputs/"
 ```
