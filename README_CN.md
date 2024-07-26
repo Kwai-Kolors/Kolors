@@ -19,6 +19,7 @@
   <a href="https://github.com/Kwai-Kolors/Kolors"><img src="https://img.shields.io/static/v1?label=Kolors Code&message=Github&color=blue&logo=github-pages"></a> &ensp;
   <a href="https://kwai-kolors.github.io/"><img src="https://img.shields.io/static/v1?label=Team%20Page&message=Page&color=green"></a> &ensp;
 
+<a href='https://huggingface.co/spaces/Kwai-Kolors/Kolors '><img src='https://img.shields.io/badge/%F0%9F%A4%97%20HF Space-HF-yellow'></a> &ensp;
   <a href="https://github.com/Kwai-Kolors/Kolors/blob/master/imgs/Kolors_paper.pdf"><img src="https://img.shields.io/static/v1?label=Tech Report&message=Arxiv:Kolors&color=red&logo=arxiv"></a> &ensp;
   <a href="https://kolors.kuaishou.com/"><img src="https://img.shields.io/static/v1?label=Official Website&message=Page&color=green"></a> &ensp;
 </div>
@@ -47,7 +48,9 @@
 
 ## <a name="新闻"></a>🎉 新闻
 
-* 2024.07.17 🔥 Kolors-IP-Adapter-Plus 的权重和推理代码已发布！请查看 [IP-Adapter-Plus](./ipadapter/) 获取更多详细信息。
+* 2024.07.26 🔥 Kolors发布了ControlNet和Inpainting Model! 请查看 [ControlNet(Canny, Depth)](./controlnet/) 和[Inpainting Model](./inpainting/) 获取详细信息。
+
+* 2024.07.17 🔥 Kolors-IP-Adapter-Plus 的权重和推理代码已发布！请查看 [IP-Adapter-Plus](./ipadapter/) 获取详细信息。
 
 * 2024.07.12 🤗 Kolors 已支持 **Diffusers**! 使用方式可参考 [kolors-diffusers](https://huggingface.co/Kwai-Kolors/Kolors-diffusers)或[下面的例子](#using-with-diffusers) ! 感谢 Diffusers 官方提供的技术支持。
 * 2024.07.10 🤖 Kolors 支持了 [ModelScope](https://modelscope.cn/models/Kwai-Kolors/Kolors).
@@ -64,9 +67,11 @@
   - [x] Inference 
   - [x] Checkpoints 
   - [x] IP-Adapter
-  - [ ] IP-Adapter-FaceID
+  - [x] ControlNet (Canny, Depth)
+  - [x] Inpainting
   - [ ] LoRA
-  - [ ] ControlNet (Pose, Canny, Depth)
+  - [ ] IP-Adapter-FaceID
+  - [ ] ControlNet (Pose)
 - [x] ComfyUI
 - [x] Gradio
 - [x] Diffusers

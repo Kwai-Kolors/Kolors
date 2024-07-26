@@ -14,6 +14,7 @@
   <a href="https://github.com/Kwai-Kolors/Kolors"><img src="https://img.shields.io/static/v1?label=Kolors Code&message=Github&color=blue&logo=github-pages"></a> &ensp;
   <a href="https://kwai-kolors.github.io/"><img src="https://img.shields.io/static/v1?label=Team%20Page&message=Page&color=green"></a> &ensp;
 
+<a href='https://huggingface.co/spaces/Kwai-Kolors/Kolors '><img src='https://img.shields.io/badge/%F0%9F%A4%97%20HF Space-HF-yellow'></a> &ensp;
   <a href="https://github.com/Kwai-Kolors/Kolors/blob/master/imgs/Kolors_paper.pdf"><img src="https://img.shields.io/static/v1?label=Tech Report&message=Arxiv:Kolors&color=red&logo=arxiv"></a> &ensp;
   <a href="https://kolors.kuaishou.com/"><img src="https://img.shields.io/static/v1?label=Official Website&message=Page&color=green"></a> &ensp;
 </div>
@@ -39,6 +40,9 @@
 
 
 ## <a name="News"></a>🎉 News
+* 2024.07.26 🔥 ControlNet and Inpainting Model are released! Please check [ControlNet(Canny, Depth)](./controlnet/) and [Inpainting Model](./inpainting/) for more details.
+
+
 * 2024.07.17 🔥 The Kolors-IP-Adapter-Plus weights and infernce code is released! Please check [IP-Adapter-Plus](./ipadapter/) for more details.
 
 * 2024.07.12 🤗 Kolors is now available in **Diffusers**! Please check [kolors-diffusers](https://huggingface.co/Kwai-Kolors/Kolors-diffusers) or the [example](#using-with-diffusers) below for detail! Thanks to the Diffusers team for their technical support.
@@ -56,9 +60,11 @@
   - [x] Inference 
   - [x] Checkpoints 
   - [x] IP-Adapter
-  - [ ] IP-Adapter-FaceID
+  - [x] ControlNet (Canny, Depth)
+  - [x] Inpainting
   - [ ] LoRA
-  - [ ] ControlNet (Pose, Canny, Depth)
+  - [ ] IP-Adapter-FaceID
+  - [ ] ControlNet (Pose)
 - [x] ComfyUI
 - [x] Gradio
 - [x] Diffusers
