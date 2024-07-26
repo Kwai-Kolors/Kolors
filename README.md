@@ -241,6 +241,37 @@ python3 ipadapter/sample_ipadapter_plus.py ./ipadapter/asset/test_ip2.png "一�
 # The image will be saved to "scripts/outputs/"
 ```
 
+### ControlNet
+
+We provide two ControlNet weights and inference code, detailed in the [controlnet](./controlnet/README.md).
+
+```bash
+# Weights download
+
+# Canny - ControlNet
+huggingface-cli download --resume-download Kwai-Kolors/Kolors-ControlNet-Canny --local-dir weights/Kolors-ControlNet-Canny
+
+# Depth - ControlNet
+huggingface-cli download --resume-download Kwai-Kolors/Kolors-ControlNet-Depth --local-dir weights/Kolors-ControlNet-Depth
+```
+
+If you intend to utilize the depth estimation network, please make sure to download its corresponding model weights.
+```
+huggingface-cli download lllyasviel/Annotators ./dpt_hybrid-midas-501f0c75.pt --local-dir ./controlnet/annotator/ckpts  
+```
+
+
+```bash
+# Inference：
+
+python ./controlnet/sample_controlNet.py ./controlnet/assets/woman_1.png 一个漂亮的女孩，高品质，超清晰，色彩鲜艳，超高分辨率，最佳品质，8k，高清，4K Canny
+
+python ./controlnet/sample_controlNet.py ./controlnet/assets/woman_2.png 新海诚风格，丰富的色彩，穿着绿色衬衫的女人站在田野里，唯美风景，清新明亮，斑驳的光影，最好的质量，超细节，8K画质 Depth
+
+# The image will be saved to "controlnet/outputs/"
+```
+
+
 ### Inpainting
 
 We provide Inpainting weights and inference code, detailed in the [inpainting](./inpainting/README.md).
