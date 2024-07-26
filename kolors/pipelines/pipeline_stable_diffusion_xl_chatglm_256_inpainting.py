@@ -1615,6 +1615,7 @@ class StableDiffusionXLInpaintPipeline(
                 batch_size * num_images_per_prompt,
                 self.do_classifier_free_guidance,
             )
+            
 
         # 11. Denoising loop
         num_warmup_steps = max(len(timesteps) - num_inference_steps * self.scheduler.order, 0)

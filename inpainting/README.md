@@ -57,7 +57,7 @@ For evaluation, we created a test set comprising 200 masked images and text prom
 |    **Kolors-Inpainting**    | **3.493** |  **0.204**    |    **3.855**    |    **4.346**    |
 <br>
 
-<font color=gray style="font-size:12px"> *The higher the scores for Average Overall Satisfaction, Average Visual Appeal, and Average Text Faithfulness, the better. Conversely, the lower the score for Average Inpainting Artifacts, the better.*</font>
+<font color=gray style="font-size:10px"> *The higher the scores for Average Overall Satisfaction, Average Visual Appeal, and Average Text Faithfulness, the better. Conversely, the lower the score for Average Inpainting Artifacts, the better.*</font>
 
 <br>
 The comparison results of SDXL-Inpainting and Kolors-Inpainting are as follows:
@@ -119,7 +119,7 @@ The comparison results of SDXL-Inpainting and Kolors-Inpainting are as follows:
   
 </table>
 
-<font color=gray style="font-size:12px"> *Kolors-Inpainting employs Chinese prompts, while SDXL-Inpainting uses English prompts.*</font>
+<font color=gray style="font-size:10px"> *Kolors-Inpainting employs Chinese prompts, while SDXL-Inpainting uses English prompts.*</font>
 
 
 
