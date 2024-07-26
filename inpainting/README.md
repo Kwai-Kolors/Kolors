@@ -8,7 +8,7 @@ We provide Kolors-Inpainting inference code and weights which were initialized w
 
 <table >
   <tr>
-    <td colspan="4" align="center">Example Result</td>
+    <td colspan="4" align="center">Inpainting Results</td>
   </tr>
   
    <tr>
@@ -58,10 +58,10 @@ For evaluation, we created a test set comprising 200 masked images and text prom
 
 
 <br>
-
+The comparison results of SDXL-Inpainting and Kolors-Inpainting are as follows:
 <table>
   <tr>
-    <td colspan="5" align="center">Compare Result</td>
+    <td colspan="5" align="center">Comparison Results</td>
   </tr>
   
   <tr>
@@ -144,10 +144,6 @@ python3 setup.py install
 2. Weights download [link](https://huggingface.co/Kwai-Kolors/Kolors-IP-Adapter-Plus)：
 ```bash
 huggingface-cli download --resume-download Kwai-Kolors/Kolors-Inpainting --local-dir weights/Kolors-Inpainting
-```
-or
-```bash
-git lfs clone https://huggingface.co/Kwai-Kolors/Kolors-Inpainting weights/Kolors-Inpainting
 ```
 
 3. Inference：
