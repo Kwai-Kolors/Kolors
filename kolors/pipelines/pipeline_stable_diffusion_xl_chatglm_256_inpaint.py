@@ -1441,18 +1441,15 @@ class StableDiffusionXLInpaintPipeline(
             negative_pooled_prompt_embeds,
         ) = self.encode_prompt(
             prompt=prompt,
-            # prompt_2=prompt_2,
             device=device,
             num_images_per_prompt=num_images_per_prompt,
             do_classifier_free_guidance=self.do_classifier_free_guidance,
             negative_prompt=negative_prompt,
-            # negative_prompt_2=negative_prompt_2,
             prompt_embeds=prompt_embeds,
             negative_prompt_embeds=negative_prompt_embeds,
             pooled_prompt_embeds=pooled_prompt_embeds,
             negative_pooled_prompt_embeds=negative_pooled_prompt_embeds,
             lora_scale=text_encoder_lora_scale,
-            # clip_skip=self.clip_skip,
         )
 
         # 4. set timesteps

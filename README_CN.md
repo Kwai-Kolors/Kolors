@@ -247,6 +247,24 @@ python3 ipadapter/sample_ipadapter_plus.py ./ipadapter/asset/test_ip2.png "一�
 # The image will be saved to "scripts/outputs/"
 ```
 
+### Inpainting
+
+我们提供了 Inpainting 的参数和代码, 详细信息见 [inpainting](./inpainting/README.md).
+
+```bash
+# Weights download
+huggingface-cli download --resume-download Kwai-Kolors/Kolors-Inpainting --local-dir weights/Kolors-Inpainting
+```
+
+```bash
+# Inference：
+python inpainting/sample_inpainting.py ./inpainting/asset/3.png ./inpainting/asset/3_mask.png 穿着美少女战士的衣服，一件类似于水手服风格的衣服，包括一个白色紧身上衣，前胸搭配一个大大的红色蝴蝶结。衣服的领子部分呈蓝色，并且有白色条纹。她还穿着一条蓝色百褶裙，超高清，辛烷渲染，高级质感，32k，高分辨率，最好的质量，超级细节，景深
+
+python inpainting/sample_inpainting.py ./inpainting/asset/4.png ./inpainting/asset/4_mask.png 穿着钢铁侠的衣服，高科技盔甲，主要颜色为红色和金色，并且有一些银色装饰。胸前有一个亮起的圆形反应堆装置，充满了未来科技感。超清晰，高质量，超逼真，高分辨率，最好的质量，超级细节，景深
+
+# The image will be saved to "scripts/outputs/"
+```
+
 <br><br>
 
 ## <a name="协议引用"></a>📜协议、引用、致谢

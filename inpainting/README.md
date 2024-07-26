@@ -39,7 +39,7 @@ We provide Kolors-Inpainting inference code and weights which were initialized w
 
 <br>
 
-**Our improvements**
+**Model details**
 
 - For inpainting, the UNet has 5 additional input channels (4 for the encoded masked image and 1 for the mask itself). The weights for the encoded masked-image channels were initialized from the non-inpainting checkpoint, while the weights for the mask channel were zero-initialized.
 - To improve the robustness of the inpainting model, we adopt a more diverse strategy for generating masks, including random masks, subject segmentation masks, rectangular masks, and masks based on dilation operations.
@@ -49,14 +49,13 @@ We provide Kolors-Inpainting inference code and weights which were initialized w
 
 
 ## <a name="Evaluation"></a>📊 Evaluation
-For evaluation, we created a test set of 200 masked images and text prompts. We invited several image experts to provide fair ratings for the generated results of different models. The experts rated the generated images based on four criteria: visual appeal, text faithfulness, conditional controllability, and overall satisfaction. Conditional controllability measures the sense of boundaries of the inpainting results, while the other criteria follow the evaluation criteria of the BaseModel. The specific results are summarized in the table below, where Kolors-Inpainting achieved the highest overall satisfaction score.
+For evaluation, we created a test set comprising 200 masked images and text prompts. We invited several image experts to provide unbiased ratings for the generated results of different models. The experts assessed the generated images based on four criteria: visual appeal, text faithfulness, inpainting artifacts, and overall satisfaction. Inpainting artifacts measure the perceptual boundaries in the inpainting results, while the other criteria adhere to the evaluation standards of the BaseModel. The specific results are summarized in the table below, where Kolors-Inpainting achieved the highest overall satisfaction score.
 
-|       Model       |  Average Overall Satisfaction | Average Conditional Controllability | Average Visual Appeal | Average Text Faithfulness |
+|       Model       |  Average Overall Satisfaction | Average Inpainting Artifacts | Average Visual Appeal | Average Text Faithfulness |
 | :-----------------: | :-----------: | :-----------: | :-----------: | :-----------: |
 | SDXL-Inpainting |	2.573	| 3.795	| 3.000	| 4.299 |
 |    **Kolors-Inpainting**    | **3.493** |  **4.796**    |    **3.855**    |    **4.346**    |
 
-------
 
 <br>
 
