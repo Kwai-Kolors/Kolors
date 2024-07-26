@@ -3,7 +3,7 @@
 
 ## <a name="Introduction"></a>📖 Introduction
 
-We provide two ControlNet weights and inference code based on Kolors-Basemodel: Canny and Depth. You can find some example images in the following.
+We provide two ControlNet weights and inference code based on Kolors-Basemodel: Canny and Depth. You can find some example images below.
 
 
 **1、ControlNet Demos**
@@ -133,7 +133,7 @@ The dependencies and installation are basically the same as the [Kolors-BaseMode
 <br>
 
 
-1. Weights download：
+### Weights download
 ```bash
 # Canny - ControlNet
 huggingface-cli download --resume-download Kwai-Kolors/Kolors-ControlNet-Canny --local-dir weights/Kolors-ControlNet-Canny
@@ -142,13 +142,13 @@ huggingface-cli download --resume-download Kwai-Kolors/Kolors-ControlNet-Canny -
 huggingface-cli download --resume-download Kwai-Kolors/Kolors-ControlNet-Depth --local-dir weights/Kolors-ControlNet-Depth
 ```
 
-If you intend to utilize the depth estimation network, please ensure to download its corresponding model weights.
+If you intend to utilize the depth estimation network, please make sure to download its corresponding model weights.
 ```
 huggingface-cli download lllyasviel/Annotators ./dpt_hybrid-midas-501f0c75.pt --local-dir ./controlnet/annotator/ckpts  
 ```
 
 
-### Inference：
+### Inference
 
 
 **a. Using canny ControlNet:**
@@ -175,7 +175,7 @@ python ./controlnet/sample_controlNet.py ./controlnet/assets/bird.png 一只颜�
 
 **c. Using depth ControlNet + IP-Adapter-Plus:**
 
-If you intend to utilize the kolors-ip-adapter-plus, please ensure to download its corresponding model weights.
+If you intend to utilize the kolors-ip-adapter-plus, please make sure to download its corresponding model weights.
 
 ```bash
 python ./controlnet/sample_controlNet_ipadapter.py ./controlnet/assets/woman_2.png ./ipadapter/asset/2.png  一个红色头发的女孩，唯美风景，清新明亮，斑驳的光影，最好的质量，超细节，8K画质 Depth
