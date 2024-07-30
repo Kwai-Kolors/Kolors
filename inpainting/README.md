@@ -55,7 +55,9 @@ For evaluation, we created a test set comprising 200 masked images and text prom
 | :-----------------: | :-----------: | :-----------: | :-----------: | :-----------: |
 | SDXL-Inpainting |	2.573	| 1.205	| 3.000	| 4.299 |
 |    **Kolors-Inpainting**    | **3.493** |  **0.204**    |    **3.855**    |    **4.346**    |
+<br>
 
+<font color=gray style="font-size:10px"> *The higher the scores for Average Overall Satisfaction, Average Visual Appeal, and Average Text Faithfulness, the better. Conversely, the lower the score for Average Inpainting Artifacts, the better.*</font>
 
 <br>
 The comparison results of SDXL-Inpainting and Kolors-Inpainting are as follows:
@@ -117,7 +119,7 @@ The comparison results of SDXL-Inpainting and Kolors-Inpainting are as follows:
   
 </table>
 
-<font color=gray style="font-size:12px"> *Kolors-Inpainting employs Chinese prompts, while SDXL-Inpainting uses English prompts.*</font>
+<font color=gray style="font-size:10px"> *Kolors-Inpainting employs Chinese prompts, while SDXL-Inpainting uses English prompts.*</font>
 
 
 
@@ -141,7 +143,7 @@ pip install -r requirements.txt
 python3 setup.py install
 ```
 
-2. Weights download [link](https://huggingface.co/Kwai-Kolors/Kolors-IP-Adapter-Plus)：
+2. Weights download [link](https://huggingface.co/Kwai-Kolors/Kolors-Inpainting)：
 ```bash
 huggingface-cli download --resume-download Kwai-Kolors/Kolors-Inpainting --local-dir weights/Kolors-Inpainting
 ```

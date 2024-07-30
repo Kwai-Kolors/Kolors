@@ -11,10 +11,9 @@ from diffusers import (
 root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(root_dir)
 
-from kolors.pipelines.pipeline_stable_diffusion_xl_chatglm_256_inpaint import StableDiffusionXLInpaintPipeline
+from kolors.pipelines.pipeline_stable_diffusion_xl_chatglm_256_inpainting import StableDiffusionXLInpaintPipeline
 from kolors.models.modeling_chatglm import ChatGLMModel
 from kolors.models.tokenization_chatglm import ChatGLMTokenizer
-
 
 def infer(image_path, mask_path, prompt):
 
@@ -23,7 +22,7 @@ def infer(image_path, mask_path, prompt):
         f'{ckpt_dir}/text_encoder',
         torch_dtype=torch.float16).half()
     tokenizer = ChatGLMTokenizer.from_pretrained(f'{ckpt_dir}/text_encoder')
-    vae = AutoencoderKL.from_pretrained(f"{ckpt_dir}/vae", revision=None)
+    vae = AutoencoderKL.from_pretrained(f"{ckpt_dir}/vae", revision=None).half()
     scheduler = EulerDiscreteScheduler.from_pretrained(f"{ckpt_dir}/scheduler")
     unet = UNet2DConditionModel.from_pretrained(f"{ckpt_dir}/unet", revision=None).half()
 
