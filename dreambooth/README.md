@@ -112,5 +112,5 @@ python3 setup.py install
 
 ### Inference
   ```bash
-    python infer_dreambooth.py
+    python infer_dreambooth.py "ktxl狗在草地上跑"
   ```
