@@ -7,7 +7,7 @@ We provide Kolors-IP-Adapter-FaceID-Plus module weights and inference code based
 
 <table>
   <tr>
-    <td colspan="3" align="center">Example Result</td>
+    <td colspan="3" align="center">Example Results</td>
   </tr>
   
    <tr>
@@ -46,7 +46,7 @@ For evaluation, we constructed a test set consisting of over 200 reference image
 
 <table>
   <tr>
-    <td colspan="4" align="center"> Comparison between SDXL-IP-Adapter-FaceID-Plus and Kolors-IP-Adapter-FaceID-Plus </td>
+    <td colspan="4" align="center"> Comparison Results </td>
   </tr>
   
   <tr>
