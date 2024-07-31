@@ -40,6 +40,8 @@
 
 
 ## <a name="News"></a>🎉 News
+* 2024.07.31 🔥 The Kolors-IP-Adapter-FaceID-Plus weights and infernce code is released! Please check [IP-Adapter-FaceID-Plus](./ipadapter_FaceID/) for more details.
+
 * 2024.07.26 🔥 ControlNet and Inpainting Model are released! Please check [ControlNet(Canny, Depth)](./controlnet/) and [Inpainting Model](./inpainting/) for more details.
 
 
@@ -62,8 +64,8 @@
   - [x] IP-Adapter
   - [x] ControlNet (Canny, Depth)
   - [x] Inpainting
+  - [x] IP-Adapter-FaceID
   - [ ] LoRA
-  - [ ] IP-Adapter-FaceID
   - [ ] ControlNet (Pose)
 - [x] ComfyUI
 - [x] Gradio
@@ -292,6 +294,24 @@ huggingface-cli download --resume-download Kwai-Kolors/Kolors-Inpainting --local
 python3 inpainting/sample_inpainting.py ./inpainting/asset/3.png ./inpainting/asset/3_mask.png 穿着美少女战士的衣服，一件类似于水手服风格的衣服，包括一个白色紧身上衣，前胸搭配一个大大的红色蝴蝶结。衣服的领子部分呈蓝色，并且有白色条纹。她还穿着一条蓝色百褶裙，超高清，辛烷渲染，高级质感，32k，高分辨率，最好的质量，超级细节，景深
 
 python3 inpainting/sample_inpainting.py ./inpainting/asset/4.png ./inpainting/asset/4_mask.png 穿着钢铁侠的衣服，高科技盔甲，主要颜色为红色和金色，并且有一些银色装饰。胸前有一个亮起的圆形反应堆装置，充满了未来科技感。超清晰，高质量，超逼真，高分辨率，最好的质量，超级细节，景深
+
+# The image will be saved to "scripts/outputs/"
+```
+
+### IP-Adapter-FaceID-Plus
+
+We provide IP-Adapter-FaceID-Plus weights and inference code, detailed in the [ipadapter_FaceID](./ipadapter_FaceID/README.md).
+
+```bash
+# Weights download
+huggingface-cli download --resume-download Kwai-Kolors/Kolors-IP-Adapter-FaceID-Plus --local-dir weights/Kolors-IP-Adapter-FaceID-Plus
+```
+
+```bash
+# Inference：
+python ipadapter_FaceID/sample_ipadapter_faceid_plus.py ./ipadapter_FaceID/assets/image1.png "穿着晚礼服，在星光下的晚宴场景中，烛光闪闪，整个场景洋溢着浪漫而奢华的氛围"
+
+python ipadapter_FaceID/sample_ipadapter_faceid_plus.py ./ipadapter_FaceID/assets/image2.png "西部牛仔，牛仔帽，荒野大镖客，背景是西部小镇，仙人掌，,日落余晖, 暖色调, 使用XT4胶片拍摄, 噪点, 晕影, 柯达胶卷，复古"
 
 # The image will be saved to "scripts/outputs/"
 ```
