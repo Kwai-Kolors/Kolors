@@ -34,8 +34,9 @@ We provide Kolors-IP-Adapter-FaceID-Plus module weights and inference code based
 ## <a name="Evaluation"></a>📊 Evaluation
 For evaluation, we constructed a test set consisting of over 200 reference images and text prompts. We invited several image experts to provide fair ratings for the generated results of different models. The experts assessed the generated images based on five criteria: visual appeal, text faithfulness, face similarity, facial aesthetics and overall satisfaction. Visual appeal and text faithfulness are used to measure the text-to-image generation capability, adhering to the evaluation standards of BaseModel. Meanwhile, face similarity and facial aesthetics are used to evaluate the performance of the proposed Kolors-IP-Adapter-FaceID-Plus. The results are summarized in the table below, where Kolors-IP-Adapter-FaceID-Plus outperforms SDXL-IP-Adapter-FaceID-Plus across all metrics.
 
+
 |       Model       |  Average Text Faithfulness | Average Visual Appeal | Average Face Similarity | Average Facial Aesthetics | Average Overall Satisfaction |
-| :--------------: | :--------: | :--------: | :--------: | :--------: |
+| :--------------: | :--------: | :--------: | :--------: | :--------: | :--------: |
 | SDXL-IP-Adapter-FaceID-Plus |	4.014	| 3.455	| 3.05	| 2.584	| 2.448 |
 | **Kolors-IP-Adapter-FaceID-Plus** | **4.235** |  **4.374**  | **4.415** | **3.887** | **3.561** |
 ------
