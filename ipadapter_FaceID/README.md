@@ -52,36 +52,36 @@ For evaluation, we constructed a test set consisting of over 200 reference image
   <tr>
     <td align="center">Reference Image </td>
     <td align="center">Prompt </td>
-    <td align="center">Kolors-IP-Adapter-FaceID-Plus Result </td>
     <td align="center">SDXL-IP-Adapter-FaceID-Plus Result </td>
+    <td align="center">Kolors-IP-Adapter-FaceID-Plus Result </td>
   </tr>
 
   <tr>
     <td align="center"><img src="./assets/test_img1_org.png" width=400px/></td>
     <td align="center"><font style="font-size:10px">古典油画风格，油彩厚重, 古典美感，历史气息 </p> Classical oil painting style, thick oil paint, classical aesthetic, historical atmosphere. </font> </td>
-    <td align="center"><img src="./assets/test_img1_Kolors.png" width=400px/> </td>
     <td align="center"><img src="./assets/test_img1_SDXL.png" width=400px/> </td>
+    <td align="center"><img src="./assets/test_img1_Kolors.png" width=400px/> </td>
   </tr>
 
   <tr>
     <td align="center"><img src="./assets/test_img2_org.png" width=400px/></td>
     <td align="center"><font style="font-size:10px">夜晚，浪漫的海边，落日余晖洒在海面上，晚霞映照着整个海滩，头戴花环，花短袖，飘逸的头发，背景是美丽的海滩，可爱年轻的半身照，优雅梦幻，细节繁复，超逼真，高分辨率，柔和的背景，低对比度 </p> Night, romantic seaside, sunset glow on the sea, evening glow reflecting on the whole beach, wearing a flower crown, short floral sleeves, flowing hair, background is a beautiful beach, cute young half-body portrait, elegant and dreamy, intricate details, ultra-realistic, high resolution, soft background, low contrast.</font> </td>
-    <td align="center"><img src="./assets/test_img2_Kolors.png" width=400px/> </td>
     <td align="center"><img src="./assets/test_img2_SDXL.png" width=400px/> </td>
+    <td align="center"><img src="./assets/test_img2_Kolors.png" width=400px/> </td>
   </tr>
 
   <tr>
     <td align="center"><img src="./assets/test_img3_org.png" width=400px/></td>
     <td align="center"><font style="font-size:10px">F1赛车手, 法拉利，戴着着红黑白相间的赛车手头盔，帅气的赛车手，飞舞的彩带，背景赛车车库和天花板泛光，璀璨闪光，穿红白黑相间赛车服，色调统一且明艳，面部白皙，面部特写，正视图 </p>F1 racer, Ferrari, wearing a red, black, and white racing helmet, handsome racer, flying ribbons, background race car garage and ceiling lights, dazzling flashes, wearing red, white, and black racing suit, unified and bright color tone, fair face, facial close-up, front view.</font> </td>
-    <td align="center"><img src="./assets/test_img3_Kolors.png" width=400px/> </td>
     <td align="center"><img src="./assets/test_img3_SDXL.png" width=400px/> </td>
+    <td align="center"><img src="./assets/test_img3_Kolors.png" width=400px/> </td>
   </tr>
 
   <tr>
     <td align="center"><img src="./assets/test_img4_org.png" width=400px/></td>
     <td align="center"><font style="font-size:10px">和服，日本传统服饰，在海边的黄昏，远山的背景，在远处的烟火，柔和的灯光，长焦镜头，夜间摄影风格，凉爽的色调，浪漫的气氛，火花四溅，时尚摄影，胶片滤镜 </p> Kimono, traditional Japanese clothing, at the seaside at dusk, distant mountain background, fireworks in the distance, soft lighting, telephoto lens, night photography style, cool tones, romantic atmosphere, sparks flying, fashion photography, film filter.</font> </td>
-    <td align="center"><img src="./assets/test_img4_Kolors.png" width=400px/> </td>
     <td align="center"><img src="./assets/test_img4_SDXL.png" width=400px/> </td>
+    <td align="center"><img src="./assets/test_img4_Kolors.png" width=400px/> </td>
   </tr>
   
 </table>
