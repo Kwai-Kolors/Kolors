@@ -114,7 +114,7 @@ def infer(test_image_path, text_prompt):
         face_crop_image = crop_image,
         face_insightface_embeds = face_embeds,
     ).images[0]
-    image.save(f'./test_res.png')
+    image.save(f'../scripts/outputs/test_res.png')
 
 if __name__ == '__main__':
     import fire

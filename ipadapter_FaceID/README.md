@@ -58,7 +58,7 @@ For evaluation, we constructed a test set consisting of over 200 reference image
 
   <tr>
     <td align="center"><img src="./assets/test_img1_org.png" width=400px/></td>
-    <td align="center"><font style="font-size:10px">古典油画风格，油彩厚重, 古典美感，历史气息 </p> Classical oil painting style, thick oil paint, classical aesthetic, historical atmosphere </font> </td>
+    <td align="center"><font style="font-size:10px">古典油画风格，油彩厚重, 古典美感，历史气息 </p> Classical oil painting style, thick oil paint, classical aesthetic, historical atmosphere. </font> </td>
     <td align="center"><img src="./assets/test_img1_Kolors.png" width=400px/> </td>
     <td align="center"><img src="./assets/test_img1_SDXL.png" width=400px/> </td>
   </tr>
@@ -86,9 +86,7 @@ For evaluation, we constructed a test set consisting of over 200 reference image
   
 </table>
 
-<font color=gray style="font-size:12px"> *Kolors-IP-Adapter-FaceID-Plus employs chinese prompts, while other methods use english prompts.*</font>
-
-
+<font color=gray style="font-size:12px"> *Kolors-IP-Adapter-FaceID-Plus employs chinese prompts, while SDXL-IP-Adapter-FaceID-Plus uses english prompts.*</font>
 
 ## <a name="Usage"></a>🛠️ Usage
 
