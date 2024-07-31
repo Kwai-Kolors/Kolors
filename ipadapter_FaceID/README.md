@@ -46,14 +46,14 @@ For evaluation, we constructed a test set consisting of over 200 reference image
 
 <table>
   <tr>
-    <td colspan="4" align="center">Compare Result</td>
+    <td colspan="4" align="center"> Comparison between SDXL-IP-Adapter-FaceID-Plus and Kolors-IP-Adapter-FaceID-Plus </td>
   </tr>
   
   <tr>
     <td align="center">Reference Image </td>
     <td align="center">Prompt </td>
-    <td align="center">SDXL-IP-Adapter-FaceID-Plus Result </td>
-    <td align="center">Kolors-IP-Adapter-FaceID-Plus Result </td>
+    <td align="center">SDXL-IP-Adapter-FaceID-Plus </td>
+    <td align="center">Kolors-IP-Adapter-FaceID-Plus </td>
   </tr>
 
   <tr>
