@@ -40,7 +40,7 @@
 
 
 ## <a name="News"></a>🎉 News
-* 2024.08.01 🔥 The Kolors-LoRA training and infernce code is released! Please check [Dreambooth-LoRA](./dreambooth/) for more details.
+* 2024.08.01 🔥 The Kolors-LoRA training and inference code is released! Please check [Dreambooth-LoRA](./dreambooth/) for more details.
   
 * 2024.07.31 🔥 The Kolors-IP-Adapter-FaceID-Plus weights and inference code is released! Please check [IP-Adapter-FaceID-Plus](./ipadapter_FaceID/) for more details.
 
