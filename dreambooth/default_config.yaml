@@ -1,0 +1,26 @@
+compute_environment: LOCAL_MACHINE
+deepspeed_config:
+  deepspeed_multinode_launcher: standard
+  gradient_accumulation_steps: 1
+  gradient_clipping: 1.5
+  offload_optimizer_device: none
+  offload_param_device: none
+  zero3_init_flag: true
+  zero_stage: 2
+  reduce_scatter: false
+  overlap_comm: true
+distributed_type: DEEPSPEED
+downcast_bf16: 'no'
+dynamo_backend: 'NO'
+fsdp_config: {}
+machine_rank: 0
+main_process_ip: 10.82.42.75
+main_process_port: 22280
+main_training_function: main
+megatron_lm_config: {}
+mixed_precision: fp16
+num_machines: 1
+num_processes: 8
+rdzv_backend: static
+same_network: true
+use_cpu: false
