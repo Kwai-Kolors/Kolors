@@ -323,7 +323,7 @@ python ipadapter_FaceID/sample_ipadapter_faceid_plus.py ./ipadapter_FaceID/asset
 We provide LoRA training and inference code, detailed in the [Dreambooth-LoRA](./dreambooth/README.md).
 
 ```bash
-# Training script
+# Training:
 sh train.sh
 ```
 
