@@ -40,7 +40,9 @@
 
 
 ## <a name="News"></a>🎉 News
-* 2024.07.31 🔥 The Kolors-IP-Adapter-FaceID-Plus weights and infernce code is released! Please check [IP-Adapter-FaceID-Plus](./ipadapter_FaceID/) for more details.
+* 2024.08.01 🔥 The Kolors-Dreambooth-LoRA training and inference code is released! Please check [Dreambooth-LoRA](./dreambooth/) for more details.
+  
+* 2024.07.31 🔥 The Kolors-IP-Adapter-FaceID-Plus weights and inference code is released! Please check [IP-Adapter-FaceID-Plus](./ipadapter_FaceID/) for more details.
 
 * 2024.07.26 🔥 ControlNet and Inpainting Model are released! Please check [ControlNet(Canny, Depth)](./controlnet/) and [Inpainting Model](./inpainting/) for more details.
 
@@ -65,7 +67,7 @@
   - [x] ControlNet (Canny, Depth)
   - [x] Inpainting
   - [x] IP-Adapter-FaceID
-  - [ ] LoRA
+  - [x] LoRA
   - [ ] ControlNet (Pose)
 - [x] ComfyUI
 - [x] Gradio
@@ -314,6 +316,20 @@ python ipadapter_FaceID/sample_ipadapter_faceid_plus.py ./ipadapter_FaceID/asset
 python ipadapter_FaceID/sample_ipadapter_faceid_plus.py ./ipadapter_FaceID/assets/image2.png "西部牛仔，牛仔帽，荒野大镖客，背景是西部小镇，仙人掌，,日落余晖, 暖色调, 使用XT4胶片拍摄, 噪点, 晕影, 柯达胶卷，复古"
 
 # The image will be saved to "scripts/outputs/"
+```
+
+### Dreambooth-LoRA
+
+We provide LoRA training and inference code, detailed in the [Dreambooth-LoRA](./dreambooth/README.md).
+
+```bash
+# Training:
+sh train.sh
+```
+
+```bash
+# Inference：
+python infer_dreambooth.py "ktxl狗在草地上跑"
 ```
 
 <br><br>
