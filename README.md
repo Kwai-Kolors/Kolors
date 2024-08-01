@@ -318,6 +318,20 @@ python ipadapter_FaceID/sample_ipadapter_faceid_plus.py ./ipadapter_FaceID/asset
 # The image will be saved to "scripts/outputs/"
 ```
 
+### Dreambooth-LoRA
+
+We provide LoRA training and inference code, detailed in the [Dreambooth-LoRA](./dreambooth/README.md).
+
+```bash
+# Training script
+sh train.sh
+```
+
+```bash
+# Inference：
+python infer_dreambooth.py "ktxl狗在草地上跑"
+```
+
 <br><br>
 
 ## <a name="License"></a>📜 License & Citation & Acknowledgments
