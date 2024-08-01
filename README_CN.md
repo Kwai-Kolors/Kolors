@@ -73,7 +73,7 @@
   - [x] ControlNet (Canny, Depth)
   - [x] Inpainting
   - [x] IP-Adapter-FaceID
-  - [ ] LoRA
+  - [x] LoRA
   - [ ] ControlNet (Pose)
 - [x] ComfyUI
 - [x] Gradio
