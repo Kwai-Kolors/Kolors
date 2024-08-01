@@ -333,7 +333,8 @@ sh train.sh
 
 ```bash
 # Inference：
-pytho
+python infer_dreambooth.py "ktxl狗在草地上跑"
+```
 
 <br><br>
 
