@@ -47,6 +47,8 @@
 <br><br>
 
 ## <a name="新闻"></a>🎉 新闻
+* 2024.08.01 🔥 Kolors-Dreambooth-LoRA 的训练和推理代码已发布！请查看 [Dreambooth-LoRA](./dreambooth/) 获取详细信息。
+
 * 2024.07.31 🔥 Kolors-IP-Adapter-FaceID-Plus 的权重和推理代码已发布！请查看 [IP-Adapter-FaceID-Plus](./ipadapter_FaceID/) 获取详细信息。
 
 * 2024.07.26 🔥 Kolors发布了ControlNet和Inpainting Model! 请查看 [ControlNet(Canny, Depth)](./controlnet/) 和[Inpainting Model](./inpainting/) 获取详细信息。
@@ -319,6 +321,19 @@ python ipadapter_FaceID/sample_ipadapter_faceid_plus.py ./ipadapter_FaceID/asset
 
 # The image will be saved to "scripts/outputs/"
 ```
+
+### Dreambooth-LoRA
+
+我们提供了Dreambooth-LoRA 的训练和推理代码，详细信息见 [Dreambooth-LoRA](./dreambooth/README.md).
+
+```bash
+# Training:
+sh train.sh
+```
+
+```bash
+# Inference：
+pytho
 
 <br><br>
 
