@@ -28,6 +28,13 @@ We provide two ControlNet weights and inference code based on Kolors-Basemodel: 
     <td align="center"><img src="outputs/Depth_woman_2.jpg" width=400px/></td>
   </tr>
 
+  <tr>
+    <td align="center"><img src="outputs/Pose_woman_4_condition.jpg" width=400px/></td>
+    <td align="center"><font style="font-size:12px">一个穿着黑色运动外套、白色内搭，上面戴着项链的女子，站在街边，背景是红色建筑和绿树，高品质，超清晰，色彩鲜艳，超高分辨率，最佳品质，8k，高清，4K。</p> A woman wearing a black sports jacket and a white top, adorned with a necklace, stands by the street, with a background of red buildings and green trees. high quality, ultra clear, colorful, ultra high resolution, best quality, 8k, HD, 4K. </font> </td> 
+    <td align="center"><img src="outputs/Pose_woman_4.jpg" width=400px/></td>
+  </tr>
+  
+
 
 </table>
 
@@ -86,6 +93,15 @@ To evaluate the performance of models, we compiled a test set of more than 200 i
 | **Kolors-ControlNet-Depth**  | **4.12** |  **4.12**  | **4.62** | **4.6** |
 
 
+
+**3、Pose**
+
+|       Model       |  Average Overall Satisfaction | Average Visual Appeal | Average Text Faithfulness | Average Conditional Controllability |
+| :--------------: | :--------: | :--------: | :--------: | :--------: |
+| SDXL-ControlNet-Pose |	1.70	| 2.78	| 4.05	| 1.98 |
+| **Kolors-ControlNet-Pose**  | **3.33** |  **3.63**  | **4.78** | **4.4** |
+
+
 <font color=gray style="font-size:12px">*The [SDXL-ControlNet-Canny](https://huggingface.co/diffusers/controlnet-canny-sdxl-1.0) and [SDXL-ControlNet-Depth](https://huggingface.co/diffusers/controlnet-depth-sdxl-1.0) load [DreamShaper-XL](https://civitai.com/models/112902?modelVersionId=351306) as backbone model.*</font>
 
 
@@ -116,6 +132,13 @@ To evaluate the performance of models, we compiled a test set of more than 200 i
     <td align="center"><img src="outputs/Depth_bird_sdxl.jpg" width=400px/></td>
   </tr>
 
+   <tr>
+    <td align="center"><img src="outputs/Pose_woman_3_condition.jpg" width=400px/></td>
+    <td align="center"><font style="font-size:12px">一位穿着紫色泡泡袖连衣裙、戴着皇冠和白色蕾丝手套的女孩双手托脸，高品质，超清晰，色彩鲜艳，超高分辨率 ，最佳品质，8k，高清，4K。</p> A girl wearing a purple puff-sleeve dress, with a crown and white lace gloves, is cupping her face with both hands. High quality, ultra-clear, vibrant colors, ultra-high resolution, best quality, 8k, HD, 4K. </font> </td> 
+    <td align="center"><img src="outputs/Pose_woman_3.jpg" width=400px/></td>
+    <td align="center"><img src="outputs/Pose_woman_3_sdxl.jpg" width=400px/></td>
+  </tr>
+
 
 
 </table>
@@ -140,12 +163,17 @@ huggingface-cli download --resume-download Kwai-Kolors/Kolors-ControlNet-Canny -
 
 # Depth - ControlNet
 huggingface-cli download --resume-download Kwai-Kolors/Kolors-ControlNet-Depth --local-dir weights/Kolors-ControlNet-Depth
+
+# Pose - ControlNet
+huggingface-cli download --resume-download Kwai-Kolors/Kolors-ControlNet-Pose --local-dir weights/Kolors-ControlNet-Pose
 ```
 
 If you intend to utilize the depth estimation network, please make sure to download its corresponding model weights.
 ```
-huggingface-cli download lllyasviel/Annotators ./dpt_hybrid-midas-501f0c75.pt --local-dir ./controlnet/annotator/ckpts  
+huggingface-cli download lllyasviel/Annotators ./dpt_hybrid-midas-501f0c75.pt --local-dir ./controlnet/annotator/ckpts
 ```
+
+Thanks to [DWPose](https://github.com/IDEA-Research/DWPose/tree/onnx?tab=readme-ov-file), you can utilize the pose estimation network. Please download the Pose model dw-ll_ucoco_384.onnx ([baidu](https://pan.baidu.com/s/1nuBjw-KKSxD_BkpmwXUJiw?pwd=28d7), [google](https://drive.google.com/file/d/12L8E2oAgZy4VACGSK9RaZBZrfgx7VTA2/view?usp=sharing)) and Det model yolox_l.onnx ([baidu](https://pan.baidu.com/s/1fpfIVpv5ypo4c1bUlzkMYQ?pwd=mjdn), [google](https://drive.google.com/file/d/1w9pXC8tT0p9ndMN-CArp1__b2GbzewWI/view?usp=sharing)). Then please put them into controlnet/annotator/ckpts/.
 
 
 ### Inference
@@ -171,6 +199,15 @@ python ./controlnet/sample_controlNet.py ./controlnet/assets/bird.png 一只颜�
 # The image will be saved to "controlnet/outputs/"
 ```
 
+**c. Using pose ControlNet:**
+
+```bash
+python ./controlnet/sample_controlNet.py ./controlnet/assets/woman_3.png 一位穿着紫色泡泡袖连衣裙、戴着皇冠和白色蕾丝手套的女孩双手托脸，高品质，超清晰，色彩鲜艳，超高分辨率，最佳品质，8k，高清，4K Pose
+
+python ./controlnet/sample_controlNet.py ./controlnet/assets/woman_4.png 一个穿着黑色运动外套、白色内搭，上面戴着项链的女子，站在街边，背景是红色建筑和绿树，高品质，超清晰，色彩鲜艳，超高分辨率，最佳品质，8k，高清，4K Pose
+
+# The image will be saved to "controlnet/outputs/"
+```
 
 
 **c. Using depth ControlNet + IP-Adapter-Plus:**

@@ -258,7 +258,7 @@ python3 ipadapter/sample_ipadapter_plus.py ./ipadapter/asset/test_ip2.png "一�
 
 ### ControlNet
 
-我们提供了两个类型的ControlNet参数和代码，详细信息见[controlnet](./controlnet/README.md)。
+我们提供了三个类型的ControlNet参数和代码，详细信息见[controlnet](./controlnet/README.md)。
 
 ```bash
 # Weights download
@@ -268,11 +268,16 @@ huggingface-cli download --resume-download Kwai-Kolors/Kolors-ControlNet-Canny -
 
 # Depth - ControlNet
 huggingface-cli download --resume-download Kwai-Kolors/Kolors-ControlNet-Depth --local-dir weights/Kolors-ControlNet-Depth
+
+# Pose - ControlNet
+huggingface-cli download --resume-download Kwai-Kolors/Kolors-ControlNet-Pose --local-dir weights/Kolors-ControlNet-Pose
 ```
 如果你打算使用深度估计网络，请确保下载其相应的模型权重。
 ```
 huggingface-cli download lllyasviel/Annotators ./dpt_hybrid-midas-501f0c75.pt --local-dir ./controlnet/annotator/ckpts  
 ```
+
+感谢[DWPose](https://github.com/IDEA-Research/DWPose/tree/onnx?tab=readme-ov-file)，你可以使用姿态预测网络。 请下载姿态模型 dw-ll_ucoco_384.onnx ([baidu](https://pan.baidu.com/s/1nuBjw-KKSxD_BkpmwXUJiw?pwd=28d7), [google](https://drive.google.com/file/d/12L8E2oAgZy4VACGSK9RaZBZrfgx7VTA2/view?usp=sharing)) 和检测模型 yolox_l.onnx ([baidu](https://pan.baidu.com/s/1fpfIVpv5ypo4c1bUlzkMYQ?pwd=mjdn), [google](https://drive.google.com/file/d/1w9pXC8tT0p9ndMN-CArp1__b2GbzewWI/view?usp=sharing))。然后请将它们放入 `controlnet/annotator/ckpts/`。
 
 
 ```bash
@@ -281,6 +286,8 @@ huggingface-cli download lllyasviel/Annotators ./dpt_hybrid-midas-501f0c75.pt --
 python ./controlnet/sample_controlNet.py ./controlnet/assets/woman_1.png 一个漂亮的女孩，高品质，超清晰，色彩鲜艳，超高分辨率，最佳品质，8k，高清，4K Canny
 
 python ./controlnet/sample_controlNet.py ./controlnet/assets/woman_2.png 新海诚风格，丰富的色彩，穿着绿色衬衫的女人站在田野里，唯美风景，清新明亮，斑驳的光影，最好的质量，超细节，8K画质 Depth
+
+python ./controlnet/sample_controlNet.py ./controlnet/assets/woman_3.png 一位穿着紫色泡泡袖连衣裙、戴着皇冠和白色蕾丝手套的女孩双手托脸，高品质，超清晰，色彩鲜艳，超高分辨率，最佳品质，8k，高清，4K Pose
 
 # The image will be saved to "controlnet/outputs/"
 ```
