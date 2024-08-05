@@ -17,6 +17,7 @@ import numpy as np
 import cv2
 
 from annotator.midas import MidasDetector
+from annotator.dwpose import DWposeDetector
 from annotator.util import resize_image,HWC3
 
 root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -39,6 +40,19 @@ def process_depth_condition_midas(img, res = 1024):
         model_midas = MidasDetector()
     
     result = HWC3( model_midas(img) )
+    result = cv2.resize( result, (w,h) )
+    return Image.fromarray(result)
+
+
+model_dwpose = None
+def process_dwpose_condition( image, res=1024 ):
+    h,w,_ = image.shape
+    img = resize_image(HWC3(image), res)
+    global model_dwpose
+    if model_dwpose is None:
+        model_dwpose = DWposeDetector()
+    out_res, out_img = model_dwpose(image) 
+    result = HWC3( out_img )
     result = cv2.resize( result, (w,h) )
     return Image.fromarray(result)
 
@@ -86,6 +100,8 @@ def infer( image_path , prompt, model_type = 'Canny' ):
         condi_img = process_canny_condition( np.array(init_image) )
     elif model_type == 'Depth':
         condi_img = process_depth_condition_midas( np.array(init_image), MAX_IMG_SIZE )
+    elif model_type == 'Pose':
+        condi_img = process_dwpose_condition( np.array(init_image), MAX_IMG_SIZE)
 
     generator = torch.Generator(device="cpu").manual_seed(66)
     image = pipe(
@@ -110,12 +126,4 @@ if __name__ == '__main__':
     import fire
     fire.Fire(infer)
     
-
-
-
-
-
-
-
-
 
