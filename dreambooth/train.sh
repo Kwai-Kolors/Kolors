@@ -4,7 +4,7 @@ CLASS_DIR="reg_dog"
 OUTPUT_DIR="trained_models/ktxl_dog_text"
 cfg_file=./default_config.yaml
 
-accelerate launch --config_file ${cfg_file} train_dreambooth_lora4_zfy.py \
+accelerate launch --config_file ${cfg_file} train_dreambooth_lora.py \
     --pretrained_model_name_or_path=$MODEL_NAME  \
     --instance_data_dir=$INSTANCE_DIR \
     --output_dir=$OUTPUT_DIR \
