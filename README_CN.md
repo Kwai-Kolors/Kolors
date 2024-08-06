@@ -47,6 +47,8 @@
 <br><br>
 
 ## <a name="新闻"></a>🎉 新闻
+* 2024.08.06 🔥 Pose ControlNet 已发布! 请查看 [ControlNet(Pose)](./controlnet/) 获取详细信息。
+
 * 2024.08.01 🔥 Kolors-Dreambooth-LoRA 的训练和推理代码已发布！请查看 [Dreambooth-LoRA](./dreambooth/) 获取详细信息。
 
 * 2024.07.31 🔥 Kolors-IP-Adapter-FaceID-Plus 的权重和推理代码已发布！请查看 [IP-Adapter-FaceID-Plus](./ipadapter_FaceID/) 获取详细信息。
@@ -74,7 +76,7 @@
   - [x] Inpainting
   - [x] IP-Adapter-FaceID
   - [x] LoRA
-  - [ ] ControlNet (Pose)
+  - [x] ControlNet (Pose)
 - [x] ComfyUI
 - [x] Gradio
 - [x] Diffusers
