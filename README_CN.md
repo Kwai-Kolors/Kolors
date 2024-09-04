@@ -47,7 +47,7 @@
 <br><br>
 
 ## <a name="新闻"></a>🎉 新闻
-* 2024.09.01 🔥 Kolors-Virtual-Try-On 可图虚拟试衣项目体验demo已发布！欢迎体验 [Kolors-Virtual-Try-On](https://huggingface.co/spaces/Kwai-Kolors/Kolors-Virtual-Try-On)， [新闻链接](https://mp.weixin.qq.com/s/Wk_Eq7OAywlrPqNC6zWZJQ)。
+* 2024.09.01 🔥 Kolors-Virtual-Try-On 可图虚拟试衣项目体验demo已发布！欢迎体验 [Kolors-Virtual-Try-On](https://huggingface.co/spaces/Kwai-Kolors/Kolors-Virtual-Try-On)， [可图公众号](https://mp.weixin.qq.com/s/Wk_Eq7OAywlrPqNC6zWZJQ)。
   
 * 2024.08.06 🔥 Pose ControlNet 已发布! 请查看 [ControlNet(Pose)](./controlnet/) 获取详细信息。
 

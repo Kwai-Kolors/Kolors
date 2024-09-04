@@ -40,7 +40,7 @@
 
 
 ## <a name="News"></a>🎉 News
-* 2024.09.01 🔥 Kolors-Virtual-Try-On, a virtaul try-on demo based on Kolors is released! Enjoy trying on [Kolors-Virtual-Try-On](https://huggingface.co/spaces/Kwai-Kolors/Kolors-Virtual-Try-On), [Report](https://mp.weixin.qq.com/s/Wk_Eq7OAywlrPqNC6zWZJQ).
+* 2024.09.01 🔥 Kolors-Virtual-Try-On, a virtaul try-on demo based on Kolors is released! Enjoy trying on [Kolors-Virtual-Try-On](https://huggingface.co/spaces/Kwai-Kolors/Kolors-Virtual-Try-On), [WeChat post](https://mp.weixin.qq.com/s/Wk_Eq7OAywlrPqNC6zWZJQ).
 
 * 2024.08.06 🔥 Pose ControlNet is released! Please check [ControlNet(Pose)](./controlnet/) for more details.
 
