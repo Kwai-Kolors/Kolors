@@ -105,9 +105,9 @@ cd Kolors
 conda create --name kolors python=3.8
 conda activate kolors
 pip install -r requirements.txt
-pip install insightface onnxruntime-gpu
 # Upgrade PyTorch to 2.0, for more versions see https://pytorch.org/
 pip install -U torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+pip install insightface onnxruntime-gpu
 python3 setup.py install
 ```
 
