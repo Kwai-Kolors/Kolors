@@ -243,6 +243,8 @@ class ChatGLMTokenizer(PreTrainedTokenizer):
             padding_strategy: PaddingStrategy = PaddingStrategy.DO_NOT_PAD,
             pad_to_multiple_of: Optional[int] = None,
             return_attention_mask: Optional[bool] = None,
+            padding_side: Optional[str] = None  # my attempt at a fix for " ChatGLMTokenizer._pad() got an unexpected keyword argument 'padding_side' with transformers 4.54
+        
     ) -> dict:
         """
         Pad encoded inputs (on left/right and up to predefined length or max length in the batch)
